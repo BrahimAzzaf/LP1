@@ -34,41 +34,6 @@ dots.forEach((dot, idx) => {
 updateSlider(currentIndex);
 // /////////////////
 
-// const screen = document.querySelector("#screen");
-// window.addEventListener('DOMContentLoaded', () => {
-
-//     for (let i = 1; i <= 6; i++) {
-//         const thumb = document.querySelector(`#thumb${i}`);
-//         thumb.addEventListener('click', () => {
-//             screen.setAttribute('src', thumb.getAttribute('src'));
-//         });
-//     }
-// });
-
-// /////////////////
-const screen = document.querySelector("#screen");
-
-window.addEventListener('DOMContentLoaded', () => {
-  for (let i = 1; i <= 6; i++) {
-    const thumb = document.querySelector(`#thumb${i}`);
-
-    thumb.addEventListener('click', () => {
-      // Disparition + zoom-out
-      screen.classList.remove("opacity-100", "scale-100");
-      screen.classList.add("opacity-0", "scale-95");
-
-      setTimeout(() => {
-        screen.setAttribute("src", thumb.getAttribute("src"));
-
-        // Réapparition + zoom-in
-        screen.classList.remove("opacity-0", "scale-95");
-        screen.classList.add("opacity-100", "scale-100");
-      }, 200);
-    });
-  }
-});
-
-
 
 
 
