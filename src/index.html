@@ -25,11 +25,11 @@
 
 <body>
   <!-- Header -->
-  <header class="flex items-center justify-between px-4 py-4 sm:py-6 sm:h-20 h-16 relative">
+  <header class="flex items-center justify-between px-10 pb-2   relative">
     <!-- Logo -->
-    <div class="flex-shrink-0 flex items-center justify-center md:justify-start w-full md:w-auto">
+    <div class="flex-shrink-0 flex items-center justify-center  md:justify-start w-full md:w-auto">
       <img src="../images/BUGGY PATCH LOGO 1.svg" alt="Logo"
-        class="w-[73px] h-[74px] md:w-[122px] md:h-[127px] object-contain">
+        class="w-[73px] h-[74px] md:w-[122px] md:h-[87px] object-contain">
     </div>
 
     <!-- Hamburger (mobile) -->
@@ -74,13 +74,13 @@
 
 
   <!-- Hero section -->
-  <section class="bg-[#f7f8f2] w-full">
-    <div class="grid md:grid-cols-2 grid-cols-1  items-start  w-full  mx-auto pt-6  ">
+  <section class="bg-[#f7f8f2] w-full md:py-0 py-6 -mt-6 md:-mt-8">
+    <div class="grid md:grid-cols-2 grid-cols-1  items-start  w-full h-full  mx-auto pt-2  ">
 
       <!-- LEFT Image -->
       <div class="hidden md:block">
         <img src="../images/buggy-patch-hero.svg"
-          class="w-full  md:w-[778px] h-full bg-[url(../images/bg-grey.svg)] bg-center bg-no-repeat" alt="Hero image" />
+          class="w-full  md:w-[768px]  bg-[url(../images/bg-grey.svg)] bg-center bg-no-repeat" alt="Hero image" />
       </div>
 
       <!-- Right content  -->
@@ -102,7 +102,7 @@
           </div>
         </div>
 
-        <h2 class="text-xl  md:text-5xl font-bold md:text-start text-center leading-snug">
+        <h2 class="text-xl  md:text-4xl font-bold md:text-start text-center leading-snug">
           Say Goodbye To Mosquito Bites With Our Kid-Friendly Patches </h2>
 
         <!-- Image for mobile only -->
@@ -130,24 +130,24 @@
             </li>
           </ul>
           <button
-          class="px-4  md:px-8 block transition-transform duration-300 ease-in-out hover:scale-95  md:h-[65px] w-full py-2 rounded-4xl font-semibold text-white text-lg sm:text-xl uppercase  bg-[#9B046F]">
-          Try It Now
+            class="px-4  md:px-8 block transition-transform duration-300 ease-in-out hover:scale-95  md:h-[65px] w-full py-2 rounded-4xl font-semibold text-white text-lg sm:text-xl uppercase  bg-[#9B046F]">
+            Try It Now
           </button>
         </div>
 
         <!-- Trust badges -->
-        <div class="pt-6 p-3">
-          <ul class="grid grid-cols-3 items-center md:gap-4">
-            <li class="flex items-center gap-2 text-xs">
-              <img src="../images/Vector1.svg" alt="Trust Badge" class="w-5 h-5">
+        <div class="pt-6 pr-10">
+          <ul class="grid grid-cols-3 items-center md:gap-10">
+            <li class="flex items-center gap-2 md:text-sm text-xs">
+              <img src="../images/Vector1.svg" alt="Trust Badge" class="w-7 h-8">
               <span>30-day money back Guarantee</span>
             </li>
-            <li class="flex items-center gap-2 text-xs">
-              <img src="../images/Vector2.svg" alt="Trust Badge" class="w-5 h-5">
+            <li class="flex items-center gap-2 md:text-sm text-xs">
+              <img src="../images/Vector2.svg" alt="Trust Badge" class="w-7 h-8">
               <span>Free Shipping</span>
             </li>
-            <li class="flex items-center gap-2 text-xs">
-              <img src="../images/Vector3.svg" alt="Trust Badge" class="w-5 h-5">
+            <li class="flex items-center gap-2 md:text-sm text-xs">
+              <img src="../images/Vector3.svg" alt="Trust Badge" class="w-7 h-8">
               <span>24/7 Customer support</span>
             </li>
           </ul>
@@ -224,103 +224,106 @@
   </style>
 
 
-<!-- Mobile Swiper (Visible only on Mobile)  -->
-<section class="md:hidden py-8 w-full">
-  <div class="container mx-auto px-4">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-          <div class="flex flex-col items-center text-center p-5 bg-white rounded-2xl border border-gray-200 shadow-sm h-64 w-full">
-            <img class="w-24 h-24 object-contain mb-4" src="../images/brand1.svg" alt="brand"
-              onerror="this.src='/api/placeholder/100/100'; this.alt='Brand placeholder'">
-            <p class="text-sm text-gray-700 flex-grow overflow-y-auto">
-              "These anti-mosquito stickers were technically developed for kids, but we think they're also perfect for
-              any outdoorsy dads who also happen to be mosquito magnets"
-            </p>
+  <!-- Mobile Swiper (Visible only on Mobile)  -->
+  <section class="md:hidden py-8 w-full">
+    <div class="container mx-auto px-4">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col items-center text-center p-5 bg-white rounded-2xl border border-gray-200 shadow-sm h-64 w-full">
+              <img class="w-24 h-24 object-contain mb-4" src="../images/brand1.svg" alt="brand"
+                onerror="this.src='/api/placeholder/100/100'; this.alt='Brand placeholder'">
+              <p class="text-sm text-gray-700 flex-grow overflow-y-auto">
+                "These anti-mosquito stickers were technically developed for kids, but we think they're also perfect for
+                any outdoorsy dads who also happen to be mosquito magnets"
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col items-center text-center p-5 bg-white rounded-2xl border border-gray-200 shadow-sm h-64 w-full">
+              <img class="w-24 h-24 object-contain mb-4" src="../images/brand2.svg" alt="brand"
+                onerror="this.src='/api/placeholder/100/100'; this.alt='Brand placeholder'">
+              <p class="text-sm text-gray-700 flex-grow overflow-y-auto">
+                "These BuggyPatches" are the real deal! We have seen the raving reviews from parents all across the
+                world!"
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col items-center text-center p-5 bg-white rounded-2xl border border-gray-200 shadow-sm h-64 w-full">
+              <img class="w-24 h-24 object-contain mb-4" src="../images/brand3.svg" alt="brand"
+                onerror="this.src='/api/placeholder/100/100'; this.alt='Brand placeholder'">
+              <p class="text-sm text-gray-700 flex-grow overflow-y-auto">
+                "The BuggyPatch scent creates a virtual shield by "camouflaging" your kids from mosquitos Genius!"
+              </p>
+            </div>
           </div>
         </div>
 
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <div class="flex flex-col items-center text-center p-5 bg-white rounded-2xl border border-gray-200 shadow-sm h-64 w-full">
-            <img class="w-24 h-24 object-contain mb-4" src="../images/brand2.svg" alt="brand"
-              onerror="this.src='/api/placeholder/100/100'; this.alt='Brand placeholder'">
-            <p class="text-sm text-gray-700 flex-grow overflow-y-auto">
-              "These BuggyPatches" are the real deal! We have seen the raving reviews from parents all across the
-              world!"
-            </p>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <div class="flex flex-col items-center text-center p-5 bg-white rounded-2xl border border-gray-200 shadow-sm h-64 w-full">
-            <img class="w-24 h-24 object-contain mb-4" src="../images/brand3.svg" alt="brand"
-              onerror="this.src='/api/placeholder/100/100'; this.alt='Brand placeholder'">
-            <p class="text-sm text-gray-700 flex-grow overflow-y-auto">
-              "The BuggyPatch scent creates a virtual shield by "camouflaging" your kids from mosquitos Genius!"
-            </p>
-          </div>
-        </div>
+        <div class="swiper-pagination mt-0"></div>
       </div>
-
-      <div class="swiper-pagination mt-0"></div>
     </div>
-  </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Initialize Swiper for mobile
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          // when window width is >= 480px (for smaller mobile in landscape)
-          480: {
-            slidesPerView: 1.2,
-          }
-        }
-      });
-
-      // Fix for images that might not load
-      const images = document.querySelectorAll('img');
-      images.forEach(img => {
-        img.addEventListener('error', function () {
-          if (!this.src.includes('/api/placeholder')) {
-            this.src = '/api/placeholder/150/150';
-            this.alt = 'Brand placeholder';
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Initialize Swiper for mobile
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            // when window width is >= 480px (for smaller mobile in landscape)
+            480: {
+              slidesPerView: 1.2,
+            }
           }
         });
-      });
 
-      // Ensure all slides have the same height
-      const slideContainers = document.querySelectorAll('.swiper-slide > div');
-      let maxHeight = 300;
-      
-      // Find the tallest slide
-      slideContainers.forEach(container => {
-        const height = container.scrollHeight;
-        maxHeight = Math.max(maxHeight, height);
+        // Fix for images that might not load
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+          img.addEventListener('error', function () {
+            if (!this.src.includes('/api/placeholder')) {
+              this.src = '/api/placeholder/150/150';
+              this.alt = 'Brand placeholder';
+            }
+          });
+        });
+
+        // Ensure all slides have the same height
+        const slideContainers = document.querySelectorAll('.swiper-slide > div');
+        let maxHeight = 300;
+
+        // Find the tallest slide
+        slideContainers.forEach(container => {
+          const height = container.scrollHeight;
+          maxHeight = Math.max(maxHeight, height);
+        });
+
+        // Set all slides to the same height
+        slideContainers.forEach(container => {
+          container.style.height = `${maxHeight}px`;
+        });
       });
-      
-      // Set all slides to the same height
-      slideContainers.forEach(container => {
-        container.style.height = `${maxHeight}px`;
-      });
-    });
-  </script>
-</section>
+    </script>
+  </section>
   <!-- Infos Section  -->
   <div class="w-full py-10 px-4 sm:px-6 lg:px-12 bg-[#fafafa]">
     <div class="max-w-7xl mx-auto flex flex-col items-center text-center gap-6">
@@ -480,77 +483,85 @@
     </div>
   </section>
 
-  <!-- Your Simple Guide to Mosquito-Free  -->
-  <section class="mx-auto  px-4  py-8  ">
-    <div class="">
-
-      <h1 class="md:text-4xl font-bold text-2xl   text-center">Your Simple <br> Guide to Mosquito-Free Fun</h1>
+  <section class="mx-auto px-4 py-8">
+    <div>
+      <h1 class="md:text-4xl font-bold text-2xl text-center">Your Simple <br> Guide to Mosquito-Free Fun</h1>
     </div>
     <div
-      class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-1 items-center  mx-auto  justify-center   gap-2 md:py-6 py-4 ">
+      class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-center mx-auto justify-center gap-4 md:py-6 py-4">
       <!-- Card 1 -->
-      <div class="flex  sm:flex-col   rounded-4xl border border-[#ECECE0] items-center       sm:w-[241px] sm:h-[350px]">
-        <div class="sm:w-full w-[171px]">
-          <img class=" object-contain  sm:block hidden " src="../images/rectangle1.svg" alt="mosquito free">
-          <img class="px-2   object-contain sm:hidden w-[117px] h-[108px] " src="../images/rectangle1mobile.svg"
+      <div
+        class="md:w-[239px] md:h-[330px] w-full h-full flex  md:flex-col rounded-2xl border border-[#ECECE0] items-center overflow-hidden ">
+        <div class="   w-full">
+          <img class="w-full object-cover hidden sm:block" src="../images/rectangle1.svg" alt="mosquito free">
+          <img class="size-[108px] rounded-full  object-cover md:hidden sm:hidden" src="../images/rectangle1mobile.svg"
             alt="mosquito free">
         </div>
-        <div class="py-2 px-4 w-full  ">
-          <p class="sm:text-xl font-normal text-base text-wrap text-[#676767]"><span class="font-semibold ">Step 1.
-              <br class="sm:hidden"> </span> Choose the right number of stickers for your child's age. Don't worry,
-            it'll
-            last for 30 days!.</p>
+        <div class="py-4 px-4 w-full">
+          <p class="md:text-base text-sm text-[#525252]"><span class="font-semibold">Step 1.</span> Choose the right
+            number of
+            stickers for your child's age. Don't worry, it'll last for 30 days!</p>
         </div>
       </div>
+
       <!-- Card 2 -->
-      <div class="flex  sm:flex-col   rounded-4xl border border-[#ECECE0] items-center       sm:w-[241px] sm:h-[350px]">
-        <div class="sm:w-full w-[171px]">
-          <img class=" object-contain  sm:block hidden " src="../images/rectangle2.svg" alt="mosquito free">
-          <img class="px-2   object-contain sm:hidden w-[117px] h-[108px] " src="../images/rectangle2mobile.svg"
+      <div
+        class="md:w-[239px] md:h-[330px] w-full h-full flex md:flex-col  rounded-2xl border border-[#ECECE0] items-center overflow-hidden ">
+        <div class="   w-full">
+          <img class="w-full object-cover hidden sm:block" src="../images/rectangle2.svg" alt="mosquito free">
+          <img class="size-[108px] rounded-full  object-cover md:hidden sm:hidden" src="../images/rectangle2mobile.svg"
             alt="mosquito free">
         </div>
-        <div class="py-2 px-4 w-full  ">
-          <p class="sm:text-xl font-normal text-base text-wrap text-[#676767]"><span class="font-bold text-[#525252] ">Step 2.
-              <br class="sm:hidden"> </span> Ready for 8 hours of fun? Just stick 'em and forget 'em!</p>
+        <div class="py-4 px-4 w-full">
+          <p class="md:text-base text-sm text-[#525252]"><span class="font-semibold">Step 2.</span> Ready for 8 hours of
+            fun? Just
+            stick 'em and forget 'em!</p>
         </div>
       </div>
+
       <!-- Card 3 -->
-      <div class="flex  sm:flex-col   rounded-4xl border border-[#ECECE0] items-center       sm:w-[241px] sm:h-[350px]">
-        <div class="sm:w-full w-[171px]">
-          <img class=" object-contain  sm:block hidden " src="../images/rectangle3.svg" alt="mosquito free">
-          <img class="px-2   object-contain sm:hidden w-[117px] h-[108px] " src="../images/rectangle3mobile.svg"
+      <div
+        class="md:w-[239px] md:h-[330px] w-full h-full flex md:flex-col rounded-2xl border border-[#ECECE0] items-center overflow-hidden ">
+        <div class="   w-full">
+          <img class="w-full object-cover hidden sm:block" src="../images/rectangle3.svg" alt="mosquito free">
+          <img class="size-[108px] rounded-full  object-cover md:hidden sm:hidden" src="../images/rectangle3mobile.svg"
             alt="mosquito free">
         </div>
-        <div class="py-2 px-4 w-full  ">
-          <p class="sm:text-xl font-normal text-base text-wrap text-[#676767]"><span class="font-bold text-[#525252] ">Step 3.
-              <br class="sm:hidden"> </span> Changing every 4-6 hours keeps those bugs at bay!</p>
+        <div class="py-4 px-4 w-full">
+          <p class="md:text-base text-sm text-[#525252]"><span class="font-semibold">Step 3.</span> Changing every 4-6
+            hours keeps
+            those bugs at bay!</p>
         </div>
       </div>
+
       <!-- Card 4 -->
-      <div class="flex  sm:flex-col   rounded-4xl border border-[#ECECE0] items-center       sm:w-[241px] sm:h-[350px]">
-        <div class="sm:w-full w-[171px]">
-          <img class=" object-contain  sm:block hidden " src="../images/rectangle4.svg" alt="mosquito free">
-          <img class="px-2   object-contain sm:hidden w-[117px] h-[108px] " src="../images/rectangle4mobile.svg"
+      <div
+        class="md:w-[239px] md:h-[330px] w-full h-full flex md:flex-col  rounded-2xl border border-[#ECECE0] items-center overflow-hidden ">
+        <div class="   w-full">
+          <img class="w-full object-cover hidden sm:block" src="../images/rectangle4.svg" alt="mosquito free">
+          <img class="size-[108px] rounded-full  object-cover md:hidden sm:hidden" src="../images/rectangle4mobile.svg"
             alt="mosquito free">
         </div>
-        <div class="py-2 px-4 w-full  ">
-          <p class="sm:text-xl font-normal text-base text-wrap text-[#676767]"><span class="font-bold text-[#525252] ">Step 4.
-              <br class="sm:hidden"> </span>Application is a breeze! Clothes, prams, car seats. Stick and go... No
-            mess,
-            no fuss.</p>
+        <div class="py-4 px-4 w-full">
+          <p class="md:text-base text-sm text-[#525252]"><span class="font-semibold">Step 4.</span> Application is a
+            breeze!
+            Clothes, prams, car seats. Stick and go... No mess, no fuss.</p>
         </div>
       </div>
+
       <!-- Card 5 -->
-      <div class="flex  sm:flex-col   rounded-4xl border border-[#ECECE0] items-center       sm:w-[241px] sm:h-[350px]">
-        <div class="sm:w-full w-[171px]">
-          <img class=" object-contain  sm:block hidden " src="../images/rectangle5.svg" alt="mosquito free">
-          <img class="px-2   object-contain sm:hidden w-[117px] h-[108px] " src="../images/rectangle5mobile.svg"
+      <div
+        class="md:w-[239px] md:h-[330px] w-full h-full flex md:flex-col  rounded-2xl border border-[#ECECE0] items-center overflow-hidden ">
+        <div class="   w-full ">
+
+          <img class="w-full object-cover hidden sm:block" src="../images/rectangle5.svg" alt="mosquito free">
+          <img class="size-[108px] rounded-full  object-cover md:hidden sm:hidden" src="../images/rectangle5mobile.svg"
             alt="mosquito free">
         </div>
-        <div class="py-2 px-4 w-full  ">
-          <p class="sm:text-xl font-normal text-base text-wrap text-[#676767]"><span class="font-bold text-[#525252] ">Step 5.
-              <br class="sm:hidden"> </span>Now watch your kids play, explore, and laugh without a single mosquito in
-            sight!</p>
+        <div class="py-4 px-4 w-full">
+          <p class="md:text-base text-sm text-[#525252]"><span class="font-semibold">Step 5.</span> Now watch your kids
+            play,
+            explore, and laugh without a single mosquito in sight!</p>
         </div>
       </div>
     </div>
@@ -649,195 +660,199 @@
       </div>
 
 
-          <!-- Right content  -->
-          <div class="flex flex-col pt-0 gap-y-6 sm:gap-y-2 md:px-7 px-4 w-full ">
-            <div class=" flex flex-col gap-3 md:w-[450px] w-full    ">
+      <!-- Right content  -->
+      <div class="flex flex-col pt-0 gap-y-6 sm:gap-y-2 md:px-7 px-4 w-full ">
+        <div class=" flex flex-col gap-3 md:w-[450px] w-full    ">
           <h1
             class="sm:text-4xl text-3xl font-bold text-gray-900 mb-4 sm:text-wrap sm:text-start text-center   md:order-1 order-2">
             BuggyPatch Insect Repellent Patches</h1>
 
 
-<!-- Features  -->
-<div class="flex flex-col gap-y-4 sm:w-full   p-2   sm:order-3 order-3">
+          <!-- Features  -->
+          <div class="flex flex-col gap-y-4 sm:w-full   p-2   sm:order-3 order-3">
 
-  <ul class="md:text-base text-sm  font-bold text-[#434343] sm:text-medium  ">
-    <li class="flex mb-2 items-center gap-2   ">
-      <img src="../images/anti mosquito.svg" alt="Icon">Keep your kids free from mosquito bites
-    </li>
-    <li class="flex mb-2 items-center gap-2  ">
-      <img src="../images/naturel.svg" alt="Icon">Stay safe with natural ingredients
-    </li>
-    <li class="flex mb-2 items-center gap-2  ">
-      <img src="../images/non-toxic.svg" alt="Icon">Enjoy non-sticky, non-toxic protection
-    </li>
-  </ul>
-</div>
-
-
-
-  
-
-<!-- Rating Container -->
-<div class="flex flex-row  items-center md:justify-start justify-center  w-full  max-w-md md:order-2 order-1">
-  <!-- User Avatars -->
-              <div class="flex -space-x-2 mr-2">
-                <img class="inline-block h-8 w-8 rounded-full border " src="../images/person1.svg" alt="user" />
-                <img class="inline-block h-8 w-8 rounded-full border " src="../images/person2.svg" alt="user" />
-                <img class="inline-block h-8 w-8 rounded-full border " src="../images/person3.svg" alt="user" />
-                <img class="inline-block h-8 w-8 rounded-full border " src="../images/person4.svg" alt="user" />
-              </div>
+            <ul class="md:text-base text-sm  font-bold text-[#434343] sm:text-medium  ">
+              <li class="flex mb-2 items-center gap-2   ">
+                <img src="../images/anti mosquito.svg" alt="Icon">Keep your kids free from mosquito bites
+              </li>
+              <li class="flex mb-2 items-center gap-2  ">
+                <img src="../images/naturel.svg" alt="Icon">Stay safe with natural ingredients
+              </li>
+              <li class="flex mb-2 items-center gap-2  ">
+                <img src="../images/non-toxic.svg" alt="Icon">Enjoy non-sticky, non-toxic protection
+              </li>
+            </ul>
+          </div>
 
 
-              <!-- Rating Text -->
-              <div class="">
-                <p class="md:text-base truncate text-xs   font-normal">Rating & 67K+ Happy Customers</p>
-              </div>
+
+
+
+          <!-- Rating Container -->
+          <div class="flex flex-row  items-center md:justify-start justify-center  w-full  max-w-md md:order-2 order-1">
+            <!-- User Avatars -->
+            <div class="flex -space-x-2 mr-2">
+              <img class="inline-block h-8 w-8 rounded-full border " src="../images/person1.svg" alt="user" />
+              <img class="inline-block h-8 w-8 rounded-full border " src="../images/person2.svg" alt="user" />
+              <img class="inline-block h-8 w-8 rounded-full border " src="../images/person3.svg" alt="user" />
+              <img class="inline-block h-8 w-8 rounded-full border " src="../images/person4.svg" alt="user" />
             </div>
 
 
-            
-
-
+            <!-- Rating Text -->
+            <div class="">
+              <p class="md:text-base truncate text-xs   font-normal">Rating & 67K+ Happy Customers</p>
             </div>
-            <!-- Packs -->
-            <div class="my-4 w-full max-w-lg md:px-4 mx-auto">
-              <div class="grid grid-cols-4 gap-1 md:gap-4">
-                <!-- 1 Pack -->
-                <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-400">
-                  <input type="radio" name="pack" class="sr-only" checked>
-                  <div class="pack-content p-2 text-center">
-                    <div class="text-xs md:text-sm font-medium">1 PACK</div>
-                    <div class="text-base md:text-lg font-bold">$14.99</div>
-                  </div>
-                  <div class="checkmark absolute -top-2 -right-2 w-5 h-5 bg-gray-500 rounded-full hidden items-center justify-center">
-                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                </label>
-                
-                <!-- 2 Pack -->
-                <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
-                  <input type="radio" name="pack" class="sr-only">
-                  <div class="pack-content p-2 text-center">
-                    <div class="text-xs md:text-sm font-medium">2 PACK</div>
-                    <div class="text-base md:text-lg font-bold">$27.00</div>
-                  </div>
-                  <div class="checkmark absolute -top-2 -right-2 w-5 h-5 bg-gray-500 rounded-full hidden items-center justify-center">
-                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                </label>
-                
-                <!-- 3 Pack -->
-                <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
-                  <input type="radio" name="pack" class="sr-only">
-                  <div class="pack-content p-2 text-center">
-                    <div class="text-xs md:text-sm font-medium">3 PACK</div>
-                    <div class="text-base md:text-lg font-bold">$36.00</div>
-                  </div>
-                  <div class="checkmark absolute -top-2 -right-2 w-5 h-5 bg-gray-500 rounded-full hidden items-center justify-center">
-                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                </label>
-                
-                <!-- 4 Pack -->
-                <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
-                  <input type="radio" name="pack" class="sr-only">
-                  <div class="pack-content p-2 text-center">
-                    <div class="text-xs md:text-sm font-medium">4 PACK</div>
-                    <div class="text-base md:text-lg font-bold">$42.00</div>
-                  </div>
-                  <div class="checkmark absolute -top-2 -right-2 w-5 h-5 bg-gray-500 rounded-full hidden items-center justify-center">
-                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                </label>
+          </div>
+
+
+
+
+
+        </div>
+        <!-- Packs -->
+        <div class="my-4 w-full max-w-lg md:px-4 mx-auto">
+          <div class="grid grid-cols-4 gap-1 md:gap-4">
+            <!-- 1 Pack -->
+            <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-400">
+              <input type="radio" name="pack" class="sr-only" checked>
+              <div class="pack-content p-2 text-center">
+                <div class="text-xs md:text-sm font-medium">1 PACK</div>
+                <div class="text-base md:text-lg font-bold">$14.99</div>
               </div>
-              
-  <script>
-    // Simple script to make the checkmarks visible on selection
-    document.querySelectorAll('input[name="pack"]').forEach(input => {
-      input.addEventListener('change', function() {
-        document.querySelectorAll('.checkmark').forEach(checkmark => {
-          checkmark.style.display = 'none';
+              <div
+                class="checkmark absolute -top-2 -right-2 w-5 h-5 bg-gray-500 rounded-full hidden items-center justify-center">
+                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+            </label>
+
+            <!-- 2 Pack -->
+            <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
+              <input type="radio" name="pack" class="sr-only">
+              <div class="pack-content p-2 text-center">
+                <div class="text-xs md:text-sm font-medium">2 PACK</div>
+                <div class="text-base md:text-lg font-bold">$27.00</div>
+              </div>
+              <div
+                class="checkmark absolute -top-2 -right-2 w-5 h-5 bg-gray-500 rounded-full hidden items-center justify-center">
+                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+            </label>
+
+            <!-- 3 Pack -->
+            <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
+              <input type="radio" name="pack" class="sr-only">
+              <div class="pack-content p-2 text-center">
+                <div class="text-xs md:text-sm font-medium">3 PACK</div>
+                <div class="text-base md:text-lg font-bold">$36.00</div>
+              </div>
+              <div
+                class="checkmark absolute -top-2 -right-2 w-5 h-5 bg-gray-500 rounded-full hidden items-center justify-center">
+                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+            </label>
+
+            <!-- 4 Pack -->
+            <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
+              <input type="radio" name="pack" class="sr-only">
+              <div class="pack-content p-2 text-center">
+                <div class="text-xs md:text-sm font-medium">4 PACK</div>
+                <div class="text-base md:text-lg font-bold">$42.00</div>
+              </div>
+              <div
+                class="checkmark absolute -top-2 -right-2 w-5 h-5 bg-gray-500 rounded-full hidden items-center justify-center">
+                <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+            </label>
+          </div>
+
+          <script>
+            // Simple script to make the checkmarks visible on selection
+            document.querySelectorAll('input[name="pack"]').forEach(input => {
+              input.addEventListener('change', function () {
+                document.querySelectorAll('.checkmark').forEach(checkmark => {
+                  checkmark.style.display = 'none';
+                });
+
+                if (this.checked) {
+                  const checkmark = this.closest('.pack-option').querySelector('.checkmark');
+                  checkmark.style.display = 'flex';
+                }
+              });
+            });
+          </script>
+        </div>
+        <div class="grid grid-rows-2   w-full text-center">
+          <div class="flex flex-col  border-b border-gray-300 sm:flex-row justify-center items-center gap-2 md:gap-2">
+            <p class="text-4xl md:text-nowrap font-bold">$14.99 USD <br><span
+                class="text-sm sm:text-base font-normal">Tax
+                included</span></p>
+            <button
+              class="px-4  md:px-8 block transition-transform duration-300 ease-in-out hover:scale-95  md:h-[65px] w-full py-2 rounded-4xl font-semibold text-white text-lg sm:text-xl uppercase  bg-[#9B046F]">
+              Try It Now
+            </button>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="w-full sm:w-[450px]  py-6 mx-auto">
+            <ul class="grid grid-cols-3  md:gap-4 gap-2   justify-items-center">
+              <li class="flex gap-1 text-[10px] md:text-sm font-light items-center"><img src="../images/Vector1.svg"
+                  alt="Trust Badge"> 30-day Money Back Guarantee</li>
+              <li class="flex gap-1 text-[10px] md:text-sm font-light items-center"><img src="../images/Vector2.svg"
+                  alt="Trust Badge"> Free Shipping</li>
+              <li class="flex gap-1 text-[10px] md:text-sm font-light items-center"><img src="../images/Vector3.svg"
+                  alt="Trust Badge"> 24/7 Customer Support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const screen = document.querySelector("#screen");
+
+        window.addEventListener('DOMContentLoaded', () => {
+          for (let i = 1; i <= 6; i++) {
+            const thumb = document.querySelector(`#thumb${i}`);
+
+            thumb.addEventListener('click', () => {
+              // Disparition + zoom-out
+              screen.classList.remove("opacity-100", "scale-100");
+              screen.classList.add("opacity-0", "scale-95");
+
+              setTimeout(() => {
+                screen.setAttribute("src", thumb.getAttribute("src"));
+
+                // Réapparition + zoom-in
+                screen.classList.remove("opacity-0", "scale-95");
+                screen.classList.add("opacity-100", "scale-100");
+              }, 200);
+            });
+          }
         });
-        
-        if (this.checked) {
-          const checkmark = this.closest('.pack-option').querySelector('.checkmark');
-          checkmark.style.display = 'flex';
-        }
-      });
-    });
-  </script>
-            </div>
-            <div class="grid grid-rows-2   w-full text-center">
-              <div class="flex flex-col  border-b border-gray-300 sm:flex-row justify-center items-center gap-2 md:gap-2">
-                <p class="text-4xl md:text-nowrap font-bold">$14.99 USD <br><span
-                    class="text-sm sm:text-base font-normal">Tax
-                    included</span></p>
-                <button
-                  class="px-4  md:px-8 block transition-transform duration-300 ease-in-out hover:scale-95  md:h-[65px] w-full py-2 rounded-4xl font-semibold text-white text-lg sm:text-xl uppercase  bg-[#9B046F]">
-                  Try It Now
-                </button>
-              </div>
-    
-              <!-- Trust Badges -->
-              <div class="w-full sm:w-[450px]  py-6 mx-auto">
-                <ul class="grid grid-cols-3  md:gap-4 gap-2   justify-items-center">
-                  <li class="flex gap-1 text-[10px] md:text-sm font-light items-center"><img src="../images/Vector1.svg"
-                      alt="Trust Badge"> 30-day Money Back Guarantee</li>
-                  <li class="flex gap-1 text-[10px] md:text-sm font-light items-center"><img src="../images/Vector2.svg"
-                      alt="Trust Badge"> Free Shipping</li>
-                  <li class="flex gap-1 text-[10px] md:text-sm font-light items-center"><img src="../images/Vector3.svg"
-                      alt="Trust Badge"> 24/7 Customer Support</li>
-                </ul>
-              </div>
+
+      </script>
     </div>
-    </div>
-
-    <script>
-      const screen = document.querySelector("#screen");
-
-      window.addEventListener('DOMContentLoaded', () => {
-        for (let i = 1; i <= 6; i++) {
-          const thumb = document.querySelector(`#thumb${i}`);
-
-          thumb.addEventListener('click', () => {
-            // Disparition + zoom-out
-            screen.classList.remove("opacity-100", "scale-100");
-            screen.classList.add("opacity-0", "scale-95");
-
-            setTimeout(() => {
-              screen.setAttribute("src", thumb.getAttribute("src"));
-
-              // Réapparition + zoom-in
-              screen.classList.remove("opacity-0", "scale-95");
-              screen.classList.add("opacity-100", "scale-100");
-            }, 200);
-          });
-        }
-      });
-
-    </script>
   </div>
   </div>
-  </div>
-  
+
   <section class="w-full max-w-4xl mx-auto py-4 md:py-8 px-4 relative ">
     <!-- Background circle decoration - only visible on larger screens -->
     <!-- <div class="hidden md:block absolute left-0 bottom-0 w-1/2  h-full bg-blue-50 rounded-full transform translate-x-[-40%] translate-y-[20%] z-0 opacity-80"></div> -->
-    
+
     <div class="relative z-10 ">
       <!-- Header -->
       <div class="text-center py-3 md:py-4 mb-4 md:mb-8">
         <h1 class="text-xl md:text-3xl font-bold">Make the Right<br>Choice for Your Child</h1>
       </div>
-  
+
       <!-- Table Container -->
       <div class="bg-white rounded-lg shadow-lg md:overflow-hidden  overflow-x-auto">
         <div class="table-wrapper">
@@ -848,7 +863,8 @@
                 <th class="p-2 md:p-4 text-left font-medium text-gray-600">Category</th>
                 <th class="p-2 md:p-4 bg-green-100 text-center">
                   <div class="flex flex-col items-center">
-                    <img src="../images/poroduct_icon.svg" alt="BuggyPatch Products" class="h-10 md:h-16 lg:h-20 mb-1 md:mb-2">
+                    <img src="../images/poroduct_icon.svg" alt="BuggyPatch Products"
+                      class="h-10 md:h-16 lg:h-20 mb-1 md:mb-2">
                     <span class="font-bold text-sm md:text-base lg:text-lg">BuggyPatch</span>
                   </div>
                 </th>
@@ -872,7 +888,7 @@
                 </th>
               </tr>
             </thead>
-  
+
             <!-- Table Body -->
             <tbody>
               <!-- Apply to skin -->
@@ -882,11 +898,14 @@
                   <div class="font-medium text-sm md:text-base lg:text-lg">No</div>
                   <div class="text-xs md:text-sm text-gray-600">Sticks to clothes</div>
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">No</td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                </td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                </td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">No
+                </td>
               </tr>
-  
+
               <!-- Contains chemicals -->
               <tr>
                 <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Contains chemicals</td>
@@ -894,54 +913,83 @@
                   <div class="font-medium text-sm md:text-base lg:text-lg">No</div>
                   <div class="text-xs md:text-sm text-gray-600">Only essential oils</div>
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes</td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                </td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                </td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                </td>
               </tr>
-  
+
               <!-- Unpleasant chemical smell -->
               <tr>
                 <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Unpleasant chemical smell</td>
-                <td class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">No</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes</td>
+                <td class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">No
+                </td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                </td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                </td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                </td>
               </tr>
-  
+
               <!-- Toxicity -->
               <tr>
                 <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Toxicity</td>
-                <td class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">Non-Toxic</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">Toxic</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">Toxic</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">Toxic</td>
+                <td
+                  class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">
+                  Non-Toxic</td>
+                <td
+                  class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">
+                  Toxic</td>
+                <td
+                  class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">
+                  Toxic</td>
+                <td
+                  class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">
+                  Toxic</td>
               </tr>
-  
+
               <!-- Duration of effect -->
               <tr>
                 <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Duration of effect</td>
-                <td class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">Up to 3 days!</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Up to 6 hours</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Up to 6 hours</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Up to 3 hours</td>
+                <td
+                  class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">
+                  Up to 3 days!</td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Up to
+                  6 hours</td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Up to
+                  6 hours</td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Up to
+                  3 hours</td>
               </tr>
-  
+
               <!-- Stickiness on skin -->
               <tr>
                 <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Stickiness on skin</td>
-                <td class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">No</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Airborne</td>
+                <td class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">No
+                </td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                </td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                </td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Airborne</td>
               </tr>
-  
+
               <!-- Causes allergies -->
               <tr>
                 <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Causes allergies</td>
-                <td class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">Allergy-free</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Possible</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Possible</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Possible</td>
+                <td
+                  class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">
+                  Allergy-free</td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Possible</td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Possible</td>
+                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Possible</td>
               </tr>
             </tbody>
           </table>
@@ -1023,18 +1071,22 @@
       <div class="md:w-1/2 md:px-8 md:py-12 py-6 w-full md:text-left text-center px-4">
         <h1 class="text-2xl  uppercase font-bold  md:text-start text-center">Get to Know <br>
           THE HAPPY PATCH COMPANY</h1>
-        <p class="mb-4 md:text-start text-center md:text-base text-xs text-[#434343]">Welcome to THE HAPPY PATCH CO, where the buzz
+        <p class="mb-4 md:text-start text-center md:text-base text-xs text-[#434343]">Welcome to THE HAPPY PATCH CO,
+          where the buzz
           stops and the fun
           begins. We're not just about patches; we're a mosquito's worst nightmare and your new best friend.</p>
-        <p class="mb-4 sm:text-start text-center md:text-base text-xs text-[#434343]">You see, we looked at those flying nuisances and
+        <p class="mb-4 sm:text-start text-center md:text-base text-xs text-[#434343]">You see, we looked at those flying
+          nuisances and
           thought, "Enough!"
           We
           rolled up our sleeves and dived headlong into the world of peppermint and citronella, mixing a little magic
           with a sprinkle of innovation.</p>
-        <p class="mb-4 sm:text-start text-center md:text-base text-xs text-[#434343]">The result? Mosquito patches that put the "ow" in
+        <p class="mb-4 sm:text-start text-center md:text-base text-xs text-[#434343]">The result? Mosquito patches that
+          put the "ow" in
           "WOW" for those
           bugs. But why stop there? Our Scratchy Patch Relief Patches aren't just products; they're a philosophy.</p>
-        <p class="mb-4 sm:text-start text-center md:text-base text-xs text-[#434343]">They're a testament to our relentless quest to
+        <p class="mb-4 sm:text-start text-center md:text-base text-xs text-[#434343]">They're a testament to our
+          relentless quest to
           banish discomfort
           from
           every backyard and picnic spot on this great green Earth. Quality, effectiveness, and a dash of "outside of
