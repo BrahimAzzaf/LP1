@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <!-- Fonts -->
-  <link href="https://fonts.cdnfonts.com/css/harmonia-free" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <!-- Fonts -->
 
 
-  <link href="https://fonts.cdnfonts.com/css/harmonia-free" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
 
   <!--  -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -23,35 +25,37 @@
   <!-- Fonts -->
 </head>
 
-<body>
+<body class="  " style=" font-family: 'DM Sans' ">
+
+
   <!-- Header -->
-  <header class="flex items-center justify-between px-10 pb-2   relative">
+  <header
+    class="2xl:container mx-auto flex items-start lg:items-center lg:justify-between   lg:px-16 lg:h-32       relative">
     <!-- Logo -->
-    <div class="flex-shrink-0 flex items-center justify-center  md:justify-start w-full md:w-auto">
-      <img src="../images/BUGGY PATCH LOGO 1.svg" alt="Logo"
-        class="w-[73px] h-[74px] md:w-[122px] md:h-[87px] object-contain">
+    <div class="flex-shrink-0 flex items-center justify-center    lg:justify-start w-full lg:w-auto ">
+      <img src="../images/BUGGY PATCH LOGO 1.svg" alt="Logo" class="size-20 lg:size-30 ">
     </div>
 
     <!-- Hamburger (mobile) -->
-    <div class="md:hidden absolute right-4">
+    <div class="lg:hidden absolute right-7 pt-3.5">
       <button id="menu-toggle" class="text-[#ED72C0] focus:outline-none">
         <img src="../images/hambergerMenu.svg" alt="Menu" class="w-6 h-6">
       </button>
     </div>
 
     <!-- Nav Links (Desktop) -->
-    <nav class="hidden md:flex">
+    <nav class="hidden lg:flex ">
       <ul class="flex gap-10 xl:gap-20 font-harmonia font-normal capitalize">
-        <li><a href="#" class="pb-2 border-b-2 border-transparent hover:border-[#ED72C0]">Buggy Patch</a></li>
-        <li><a href="#" class="pb-2 border-b-2 border-transparent hover:border-[#ED72C0]">How it works</a></li>
-        <li><a href="#" class="pb-2 border-b-2 border-transparent hover:border-[#ED72C0]">Benefits</a></li>
-        <li><a href="#" class="pb-2 border-b-2 border-transparent hover:border-[#ED72C0]">Shop now</a></li>
+        <li><a href="#" class="pb-6 border-b-2 border-transparent hover:border-[#ED72C0]">Buggy Patch</a></li>
+        <li><a href="#" class="pb-6 border-b-2 border-transparent hover:border-[#ED72C0]">How it works</a></li>
+        <li><a href="#" class="pb-6 border-b-2 border-transparent hover:border-[#ED72C0]">Benefits</a></li>
+        <li><a href="#" class="pb-6 border-b-2 border-transparent hover:border-[#ED72C0]">Shop now</a></li>
       </ul>
     </nav>
 
     <!-- Mobile Menu -->
     <nav id="mobile-menu"
-      class="absolute top-full left-0 text-center w-full bg-[#f8f8f8] shadow-md px-4 py-4 hidden md:hidden z-50">
+      class="absolute top-20 left-0 text-center w-full bg-[#f8f8f8] shadow-md px-4 py-4 hidden lg:hidden z-50">
       <ul class="flex flex-col space-y-2 font-harmonia font-normal capitalize">
         <li><a href="#" class="block hover:text-[#ED72C0]">Buggy Patch</a></li>
         <li><a href="#" class="block hover:text-[#ED72C0]">How it works</a></li>
@@ -74,81 +78,89 @@
 
 
   <!-- Hero section -->
-  <section class="bg-[#f7f8f2] w-full md:py-0 py-6 -mt-6 md:-mt-8">
-    <div class="grid md:grid-cols-2 grid-cols-1  items-start  w-full h-full  mx-auto pt-2  ">
+  <section class="2xl:container mx-auto text-neutral-700   w-full  py-7 lg:py-0  -mt-6 lg:-mt-7 px-3">
+    <div
+      class="grid lg:grid-cols-2 lg:bg-[#F8F8F3] bg-[#F0F0E8] grid-cols-1 lg:pt-10.5  items-start  w-full h-full  mx-auto   ">
 
       <!-- LEFT Image -->
-      <div class="hidden md:block">
+      <div class="hidden lg:block">
         <img src="../images/buggy-patch-hero.svg"
-          class="w-full  md:w-[768px]  bg-[url(../images/bg-grey.svg)] bg-center bg-no-repeat" alt="Hero image" />
+          class="  lg:w-[661.80px] lg:h-full  bg-[url(../images/bg-grey.svg)] bg-center bg-no-repeat"
+          alt="Hero image" />
       </div>
 
       <!-- Right content  -->
-      <div class="flex flex-col pt-0  gap-y-4 sm:gap-y-2 md:px-7 px-5 w-full ">
+      <div class="flex flex-col gap-2.5 lg:gap-2 md:px-6 lg:px-7  w-full  ">
         <!-- Rating Container -->
-        <div class="flex flex-row  items-center md:justify-start justify-center  w-full  max-w-md ">
+        <div class="flex flex-row  items-center  lg:justify-start justify-center  ">
           <!-- User Avatars -->
-          <div class="flex -space-x-2 mr-2">
-            <img class="inline-block h-8 w-8 rounded-full border " src="../images/person1.svg" alt="user" />
-            <img class="inline-block h-8 w-8 rounded-full border " src="../images/person2.svg" alt="user" />
-            <img class="inline-block h-8 w-8 rounded-full border " src="../images/person3.svg" alt="user" />
-            <img class="inline-block h-8 w-8 rounded-full border " src="../images/person4.svg" alt="user" />
+          <div class="flex -space-x-3 px-2 ">
+            <img class="inline-block h-8 w-8 rounded-full " src="../images/person1.svg" alt="user" />
+            <img class="inline-block h-8 w-8 rounded-full " src="../images/person2.svg" alt="user" />
+            <img class="inline-block h-8 w-8 rounded-full " src="../images/person3.svg" alt="user" />
+            <img class="inline-block h-8 w-8 rounded-full " src="../images/person4.svg" alt="user" />
           </div>
 
 
           <!-- Rating Text -->
-          <div class="">
-            <p class="md:text-base truncate text-xs   font-normal">Rating & 67K+ Happy Customers</p>
+          <div class=" text-black text-sm lg:text-lg font-normal  lg:leading-normal leading-tight">
+            Rating & 67K+ Happy Customers
           </div>
         </div>
 
-        <h2 class="text-xl  md:text-4xl font-bold md:text-start text-center leading-snug">
-          Say Goodbye To Mosquito Bites With Our Kid-Friendly Patches </h2>
+        <p class="text-center lg:text-start  justify-start z-10 text-black text-2xl font-bold  ">
+          Say Goodbye To Mosquito Bites With Our Kid-Friendly Patches</p>
 
         <!-- Image for mobile only -->
-        <div class="block md:hidden">
-          <img src="../images/buggy-patch-hero.svg"
-            class="w-full bg-[url(../images/bg-grey.svg)] md:w-[344px] bg-center bg-no-repeat" alt="Hero image" />
+        <div class="block lg:hidden -mt-12 md:mt-4 mx-auto w-full ">
+          <img src="../images/buggy-patch-hero.png"
+            class="bg-[url(../images/bg-grey.svg)]  size-full bg-center bg-no-repeat" alt="Hero image" />
         </div>
 
         <!-- Paragraph + Features + Button -->
-        <div class="flex flex-col gap-y-4     mx-auto w-full px-2">
-          <p class="sm:text-start text-center font-normal md:text-medium text-sm  px-4">
+        <div class="flex flex-col gap-y-5  items-center lg:items-start  w-full ">
+
+          <div
+            class=" px-2 lg:text-start text-center lg:text-xl text-base justify-start text-neutral-700  font-normal  lg:leading-relaxed leading-tight">
             Unlike the common mosquito protection that involves toxic sprays or direct skin application, our patches are
             easy to stick on clothes, car seats, and other objects to enjoy up to 8 hours of protection from bites.
-          </p>
+          </div>
 
-          <ul class="md:text-xl text-base font-semibold truncate px-4 ">
-            <li class="flex mb-2 items-center gap-2   ">
-              <img src="../images/anti mosquito.svg" alt="Icon">Keep your kids free from mosquito bites
+          <ul class="flex flex-col gap-1.5 md:text-xl text-base font-bold   ">
+            <li class="flex mb-2 items-center gap-2.5 ">
+              <img src="../images/anti mosquito.svg" class="size-8 lg:size-11" alt="Icon">Keep your kids free from
+              mosquito bites
             </li>
-            <li class="flex mb-2 items-center gap-2  ">
-              <img src="../images/naturel.svg" alt="Icon">Stay safe with natural ingredients
+            <li class="flex mb-2 items-center gap-2.5 ">
+              <img src="../images/naturel.svg" class="size-8 lg:size-11" alt="Icon">Stay safe with natural ingredients
             </li>
-            <li class="flex mb-2 items-center gap-2  ">
-              <img src="../images/non-toxic.svg" alt="Icon">Enjoy non-sticky, non-toxic protection
+            <li class="flex mb-2 items-center gap-2.5 ">
+              <img src="../images/non-toxic.svg" class="size-8 lg:size-11" alt="Icon">Enjoy non-sticky, non-toxic
+              protection
             </li>
           </ul>
+
           <button
-            class="px-4  md:px-8 block transition-transform duration-300 ease-in-out hover:scale-95  md:h-[65px] w-full py-2 rounded-4xl font-semibold text-white text-lg sm:text-xl uppercase  bg-[#9B046F]">
+            class="mx-auto w-76 h-14 px-2  block transition-transform duration-300 ease-in-out hover:scale-95   rounded-4xl font-semibold text-white text-lg  uppercase   opacity-90 bg-gradient-to-b from-pink-600 to-pink-900  ">
             Try It Now
           </button>
+
         </div>
 
         <!-- Trust badges -->
-        <div class="pt-6 pr-10">
-          <ul class="grid grid-cols-3 items-center md:gap-10">
+        <div class="mx-auto py-3 px-7">
+          <ul class="grid grid-cols-3 items-center gap-6 justify-center">
             <li class="flex items-center gap-2 md:text-sm text-xs">
               <img src="../images/Vector1.svg" alt="Trust Badge" class="w-7 h-8">
               <span>30-day money back Guarantee</span>
             </li>
             <li class="flex items-center gap-2 md:text-sm text-xs">
               <img src="../images/Vector2.svg" alt="Trust Badge" class="w-7 h-8">
-              <span>Free Shipping</span>
+              <span>Free <br> Shipping</span>
             </li>
             <li class="flex items-center gap-2 md:text-sm text-xs">
               <img src="../images/Vector3.svg" alt="Trust Badge" class="w-7 h-8">
-              <span>24/7 Customer support</span>
+              <span>24/7 Customer <br> support</span>
             </li>
           </ul>
         </div>
@@ -160,9 +172,9 @@
   <!-- Hero section -->
 
   <!-- Info Cards Section  -->
-  <section class="hidden md:block py-8 sm:py-10 md:py-12 mx-auto w-full ">
+  <section class="hidden lg:block py-8 sm:py-10 md:py-12 mx-auto w-full ">
     <!-- Container -->
-    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
 
         <!-- Card 1  -->
@@ -185,7 +197,7 @@
           <div class="w-full flex justify-center mb-2">
             <img class="object-contain h-16 sm:h-20 md:h-24 lg:h-32 w-auto" src="../images/brand2.svg" alt="brand">
           </div>
-          <p class="text-sm sm:text-base md:text-base">
+          <p class="text-sm md:text-base">
             "These BuggyPatches" are the real deal! We have seen the raving reviews from parents all across the world!"
           </p>
         </div>
@@ -225,17 +237,17 @@
 
 
   <!-- Mobile Swiper (Visible only on Mobile)  -->
-  <section class="md:hidden py-8 w-full">
-    <div class="container mx-auto px-4">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+  <section class="lg:hidden py-9 gap-7 w-full mx-auto container ">
+    <div class=" px-4 container mx-auto">
+      <div class=" swiper mySwiper ">
+        <div class="swiper-wrapper ">
           <!-- Slide 1 -->
-          <div class="swiper-slide">
+          <div class="swiper-slide ">
             <div
-              class="flex flex-col items-center text-center p-5 bg-white rounded-2xl border border-gray-200 shadow-sm h-64 w-full">
-              <img class="w-24 h-24 object-contain mb-4" src="../images/brand1.svg" alt="brand"
+              class="w-52 h-64 md:w-62 mx-auto  flex flex-col gap-3.5 items-center justify-center  text-center p-5.5 bg-white rounded-2xl border border-gray-800 shadow-sm  ">
+              <img class=" w-40 h-10  " src="../images/brand1.svg" alt="brand"
                 onerror="this.src='/api/placeholder/100/100'; this.alt='Brand placeholder'">
-              <p class="text-sm text-gray-700 flex-grow overflow-y-auto">
+              <p class="text-neutral-700 text-sm font-normal leading-tight flex-grow    overflow-y-auto">
                 "These anti-mosquito stickers were technically developed for kids, but we think they're also perfect for
                 any outdoorsy dads who also happen to be mosquito magnets"
               </p>
@@ -245,10 +257,10 @@
           <!-- Slide 2 -->
           <div class="swiper-slide">
             <div
-              class="flex flex-col items-center text-center p-5 bg-white rounded-2xl border border-gray-200 shadow-sm h-64 w-full">
-              <img class="w-24 h-24 object-contain mb-4" src="../images/brand2.svg" alt="brand"
+              class="w-52 h-64 md:w-62 mx-auto  flex flex-col gap-3.5 items-center justify-center  text-center p-5.5 bg-white rounded-2xl border border-gray-800 shadow-sm  ">
+              <img class="w-40 h-10    " src="../images/brand2.svg" alt="brand"
                 onerror="this.src='/api/placeholder/100/100'; this.alt='Brand placeholder'">
-              <p class="text-sm text-gray-700 flex-grow overflow-y-auto">
+              <p class="text-neutral-700 text-sm font-normal Content flex-grow overflow-y-auto">
                 "These BuggyPatches" are the real deal! We have seen the raving reviews from parents all across the
                 world!"
               </p>
@@ -258,17 +270,16 @@
           <!-- Slide 3 -->
           <div class="swiper-slide">
             <div
-              class="flex flex-col items-center text-center p-5 bg-white rounded-2xl border border-gray-200 shadow-sm h-64 w-full">
-              <img class="w-24 h-24 object-contain mb-4" src="../images/brand3.svg" alt="brand"
+              class="w-52 h-64 md:w-62 mx-auto  flex flex-col gap-3.5 items-center justify-center  text-center p-5.5 bg-white rounded-2xl border border-gray-800 shadow-sm  ">
+              <img class="w-40 h-10   " src="../images/brand3.svg" alt="brand"
                 onerror="this.src='/api/placeholder/100/100'; this.alt='Brand placeholder'">
-              <p class="text-sm text-gray-700 flex-grow overflow-y-auto">
+              <p class="text-neutral-700 text-sm font-normal  flex-grow overflow-y-auto">
                 "The BuggyPatch scent creates a virtual shield by "camouflaging" your kids from mosquitos Genius!"
               </p>
             </div>
           </div>
         </div>
-
-        <div class="swiper-pagination mt-0"></div>
+        <div class="swiper-pagination  z-10 mt-10 md:mt-28"></div>
       </div>
     </div>
 
@@ -276,13 +287,13 @@
       document.addEventListener('DOMContentLoaded', function () {
         // Initialize Swiper for mobile
         const swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          spaceBetween: 20,
+          slidesPerView: 1.4,
+          spaceBetween: 21,
           centeredSlides: true,
           loop: true,
           autoplay: {
             delay: 3000,
-            disableOnInteraction: false,
+            disableOnInteraction: true,
           },
           pagination: {
             el: ".swiper-pagination",
@@ -291,7 +302,7 @@
           breakpoints: {
             // when window width is >= 480px (for smaller mobile in landscape)
             480: {
-              slidesPerView: 1.2,
+              slidesPerView: 1.5,
             }
           }
         });
@@ -309,7 +320,7 @@
 
         // Ensure all slides have the same height
         const slideContainers = document.querySelectorAll('.swiper-slide > div');
-        let maxHeight = 300;
+        let maxHeight = 200;
 
         // Find the tallest slide
         slideContainers.forEach(container => {
@@ -325,74 +336,78 @@
     </script>
   </section>
   <!-- Infos Section  -->
-  <div class="w-full py-10 px-4 sm:px-6 lg:px-12 bg-[#fafafa]">
-    <div class="max-w-7xl mx-auto flex flex-col items-center text-center gap-6">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
-        Protecting <br class="sm:hidden"> Your Children with Love
-      </h2>
+  <div class="w-full  py-2  bg-[#fafafa]">
+    <div class="2xl:max-w-7xl mx-auto flex flex-col  space-y-3.5 items-center text-center ">
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full items-center">
+      <h2 class="text-center justify-start text-black text-2xl font-bold  ">
+        Protecting <br />Your Children with Love</h2>
+
+      <div class="grid grid-cols-1  lg:grid-cols-2 items-center  space-y-4  mx-auto">
         <!-- Image -->
-        <img src="../images/protecting-children-bg.svg" alt="bg" class="w-full h-auto object-contain mx-auto">
+        <img src="../images/protecting-children-bg.svg" alt="bg" class="w-96 mx-auto  object-cover px-12">
 
         <!-- Features -->
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-2 px-7 py-4">
           <!-- Feature Item -->
-          <div class="flex gap-4 items-start">
+          <div class="flex gap-3.5  text-neutral-600 items-start">
             <img src="../images/icon1.svg" alt="" class="w-10 h-10 shrink-0">
-            <div class="text-left text-[#525252]">
-              <h3 class="text-lg md:text-xl font-bold">Sticker it up!</h3>
-              <p class="text-sm md:text-base">The versatile application lets you slap those patches on clothes,
+            <div class="text-left ">
+              <h3 class="text-lg lg:text-xl font-bold">Sticker it up!</h3>
+              <p class="text-sm  md:text-base">The versatile application lets you slap those patches on
+                clothes,
                 strollers, or car seats. No mess, no fuss, just pure protection. Now that's convenient!</p>
             </div>
           </div>
 
           <!-- Feature 2 -->
-          <div class="flex gap-4 items-start">
+          <div class="flex gap-3.5  text-neutral-600 items-start">
             <img src="../images/icon2.svg" alt="" class="w-10 h-10 shrink-0">
-            <div class="text-left text-[#525252]">
+            <div class="text-left ">
               <h3 class="text-lg md:text-xl font-bold">Got a little fashionista at home?</h3>
-              <p class="text-sm md:text-base">Our patches are kid-approved and stylish! Your child will be the coolest
+              <p class="text-sm  md:text-base">Our patches are kid-approved and stylish! Your child will be the
+                coolest
                 mosquito-free kid on the block.</p>
             </div>
           </div>
 
           <!-- Feature 3 -->
-          <div class="flex gap-4 items-start">
+          <div class="flex gap-3.5  text-neutral-600 items-start">
             <img src="../images/icon3.svg" alt="" class="w-10 h-10 shrink-0">
-            <div class="text-left text-[#525252]">
-              <h3 class="text-lg md:text-xl font-bold">Peace of mind every single day</h3>
-              <p class="text-sm md:text-base text-[#676767]">No biting or itching. Know what that means? You can finally
-                enjoy your coffee while they play!</p>
+            <div class="text-left ">
+              <h3 class="text-lg md:text-xl font-bold">Peace of mind every single day, without biting or itching. </h3>
+              <p class="text-sm  md:text-base ">Know what that means? You can finally enjoy your coffee while they play!
+              </p>
             </div>
           </div>
 
           <!-- Feature 4 -->
-          <div class="flex gap-4 items-start">
+          <div class="flex gap-3  text-neutral-600 items-start">
             <img src="../images/icon4.svg" alt="" class="w-10 h-10 shrink-0">
-            <div class="text-left text-[#525252]">
+            <div class="text-left ">
               <h3 class="text-lg md:text-xl font-bold">Exploration without interruption</h3>
-              <p class="text-sm md:text-base text-[#676767]">Let them explore the world and enjoy every tiny big
-                adventure. No mosquitos are allowed!</p>
+              <p class="text-sm  md:text-base ">Let them explore the world and enjoy every tiny big adventure. No
+                mosquitos are allowed!</p>
             </div>
           </div>
 
           <!-- Feature 5 -->
-          <div class="flex gap-4 items-start">
+          <div class="flex gap-3.5  text-neutral-600 items-start">
             <img src="../images/icon5.svg" alt="" class="w-10 h-10 shrink-0">
-            <div class="text-left text-[#525252]">
+            <div class="text-left ">
               <h3 class="text-lg md:text-xl font-bold">Don't just take our word for it</h3>
-              <p class="text-sm md:text-base text-[#676767]">Ask the countless parents who trust us. We're practically
+              <p class="text-sm  md:text-base ">Ask the countless parents who trust us. We're
+                practically
                 family!</p>
             </div>
           </div>
 
           <!-- Feature 6 -->
-          <div class="flex gap-4 items-start">
+          <div class="flex gap-3.5  text-neutral-600 items-start">
             <img src="../images/icon6.svg" alt="" class="w-10 h-10 shrink-0">
-            <div class="text-left text-[#525252]">
+            <div class="text-left ">
               <h3 class="text-lg md:text-xl font-bold">Stay smart, stay safe</h3>
-              <p class="text-sm md:text-base text-[#676767]">Knowledge is power, and we're here to empower you. From A
+              <p class="text-sm  md:text-base ">Knowledge is power, and we're here to empower
+                you. From A
                 to Z about mosquito protection, we've got your back.</p>
             </div>
           </div>
@@ -402,33 +417,33 @@
   </div>
 
   <!--  brans  Section  -->
-  <section class="w-full py-4 border-b-2 border-gray-300">
-    <div class="container mx-auto px-4 md:px-6">
+  <section class="w-full pb-5 border-b-2 border-gray-300">
+    <div class="container mx-auto  lg:px-6">
       <!-- Mobile Version -->
-      <div class="block md:hidden">
-        <div class="grid grid-cols-2 gap-3">
-          <div class="flex items-center gap-2">
-            <img class="w-8 h-8 object-contain" src="../images/small_brand_1.svg" alt="All natural product">
+      <div class="block md:hidden px-8 uppercase ">
+        <div class="grid grid-cols-3 items-center   gap-5 ">
+          <div class="flex items-center gap-2.5 w-full">
+            <img class="w-6 object-contain" src="../images/small_brand_1.svg" alt="All natural product">
             <span class="text-xs">ALL natural product</span>
           </div>
-          <div class="flex items-center gap-2">
-            <img class="w-8 h-8 object-contain" src="../images/small_brand_2.svg" alt="Natural essential oils">
+          <div class="flex items-center gap-2.5 w-full">
+            <img class="w-6 object-contain" src="../images/small_brand_2.svg" alt="Natural essential oils">
             <span class="text-xs">Natural essential oils</span>
           </div>
-          <div class="flex items-center gap-2">
-            <img class="w-8 h-8 object-contain" src="../images/small_brand_6.svg" alt="Environmentally Friendly">
-            <span class="text-xs">Environmentally Friendly</span>
+          <div class="flex items-center gap-2.5 w-full">
+            <img class="w-6 object-contain" src="../images/small_brand_4.svg" alt="DEET free">
+            <span class="text-xs">DEET <br> free</span>
           </div>
-          <div class="flex items-center gap-2">
-            <img class="w-8 h-8 object-contain" src="../images/small_brand_4.svg" alt="DEET free">
-            <span class="text-xs">DEET free</span>
+          <div class="flex items-center  gap-2.5 w-full">
+            <img class="w-6 object-contain" src="../images/small_brand_6.svg" alt="Environmentally Friendly">
+            <span class="text-xs">Environment ally Friendly</span>
           </div>
-          <div class="flex items-center gap-2">
-            <img class="w-8 h-8 object-contain" src="../images/small_brand_5.svg" alt="Fun and quirky">
+          <div class="flex items-center ml-3 gap-2.5 w-full">
+            <img class="w-6 object-contain" src="../images/small_brand_5.svg" alt="Fun and quirky">
             <span class="text-xs">Fun and quirky</span>
           </div>
-          <div class="flex items-center gap-2">
-            <img class="w-8 h-8 object-contain" src="../images/small_brand_3.svg" alt="No chemicals">
+          <div class="flex items-center gap-2.5 w-full">
+            <img class="w-6 object-contain" src="../images/small_brand_3.svg" alt="No chemicals">
             <span class="text-xs">No chemicals</span>
           </div>
         </div>
@@ -483,87 +498,80 @@
     </div>
   </section>
 
-  <section class="mx-auto px-4 py-8">
-    <div>
+  <section class="2xl:container mx-auto  py-5">
+    <div class="px-2">
       <h1 class="md:text-4xl font-bold text-2xl text-center">Your Simple <br> Guide to Mosquito-Free Fun</h1>
     </div>
     <div
-      class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-center mx-auto justify-center gap-4 md:py-6 py-4">
+      class="grid xl:grid-cols-5 px-4 text-neutral-600 lg:grid-cols-4 md:grid-cols-2 items-center mx-auto  gap-3.5 md:py-6 py-4">
       <!-- Card 1 -->
       <div
-        class="md:w-[239px] md:h-[330px] w-full h-full flex  md:flex-col rounded-2xl border border-[#ECECE0] items-center overflow-hidden ">
-        <div class="   w-full">
-          <img class="w-full object-cover hidden sm:block" src="../images/rectangle1.svg" alt="mosquito free">
-          <img class="size-[108px] rounded-full  object-cover md:hidden sm:hidden" src="../images/rectangle1mobile.svg"
-            alt="mosquito free">
+        class="w-80 h-32 md:size-full lg:w-60 lg:h-80 py-2 lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
+        <div class="    ">
+          <img class="  hidden lg:block" src="../images/rectangle1.svg" alt="mosquito free">
+          <img class=" rounded-4xl  object-cover lg:hidden " src="../images/rectangle1mobile.svg" alt="mosquito free">
         </div>
-        <div class="py-4 px-4 w-full">
-          <p class="md:text-base text-sm text-[#525252]"><span class="font-semibold">Step 1.</span> Choose the right
+        <div class=" w-44 py-3.5 px-5">
+          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 1</span> <br> Choose the right
             number of
             stickers for your child's age. Don't worry, it'll last for 30 days!</p>
         </div>
       </div>
-
       <!-- Card 2 -->
       <div
-        class="md:w-[239px] md:h-[330px] w-full h-full flex md:flex-col  rounded-2xl border border-[#ECECE0] items-center overflow-hidden ">
-        <div class="   w-full">
-          <img class="w-full object-cover hidden sm:block" src="../images/rectangle2.svg" alt="mosquito free">
-          <img class="size-[108px] rounded-full  object-cover md:hidden sm:hidden" src="../images/rectangle2mobile.svg"
-            alt="mosquito free">
+        class="w-80 h-32 md:size-full lg:w-60 lg:h-80 py-2 lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
+        <div class="   ">
+          <img class="  hidden lg:block" src="../images/rectangle2.svg" alt="mosquito free">
+          <img class=" rounded-4xl  object-cover lg:hidden " src="../images/rectangle2mobile.svg" alt="mosquito free">
         </div>
-        <div class="py-4 px-4 w-full">
-          <p class="md:text-base text-sm text-[#525252]"><span class="font-semibold">Step 2.</span> Ready for 8 hours of
-            fun? Just
-            stick 'em and forget 'em!</p>
+        <div class=" w-44 py-3.5 px-5">
+          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 2</span> <br>
+            Ready for 8 hours of fun? Just stick 'em and forget 'em!</p>
         </div>
       </div>
-
       <!-- Card 3 -->
       <div
-        class="md:w-[239px] md:h-[330px] w-full h-full flex md:flex-col rounded-2xl border border-[#ECECE0] items-center overflow-hidden ">
-        <div class="   w-full">
-          <img class="w-full object-cover hidden sm:block" src="../images/rectangle3.svg" alt="mosquito free">
-          <img class="size-[108px] rounded-full  object-cover md:hidden sm:hidden" src="../images/rectangle3mobile.svg"
-            alt="mosquito free">
+        class="w-80 h-32 md:size-full lg:w-60 lg:h-80 py-2 lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
+        <div class="   ">
+          <img class="  hidden lg:block" src="../images/rectangle3.svg" alt="mosquito free">
+          <img class=" rounded-4xl  object-cover 
+           lg:hidden " src="../images/rectangle3mobile.svg" alt="mosquito free">
         </div>
-        <div class="py-4 px-4 w-full">
-          <p class="md:text-base text-sm text-[#525252]"><span class="font-semibold">Step 3.</span> Changing every 4-6
-            hours keeps
-            those bugs at bay!</p>
+        <div class=" w-44 py-3.5 px-5">
+          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 3</span> <br>Changing every 4-6
+            hours keeps those bugs at bay!</p>
         </div>
       </div>
-
       <!-- Card 4 -->
       <div
-        class="md:w-[239px] md:h-[330px] w-full h-full flex md:flex-col  rounded-2xl border border-[#ECECE0] items-center overflow-hidden ">
-        <div class="   w-full">
-          <img class="w-full object-cover hidden sm:block" src="../images/rectangle4.svg" alt="mosquito free">
-          <img class="size-[108px] rounded-full  object-cover md:hidden sm:hidden" src="../images/rectangle4mobile.svg"
-            alt="mosquito free">
+        class="w-80 h-32 md:size-full lg:w-60 lg:h-80 py-2 lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
+        <div class="   ">
+          <img class="  hidden lg:block" src="../images/rectangle4.svg" alt="mosquito free">
+          <img class=" rounded-4xl  object-cover 
+           lg:hidden " src="../images/rectangle4mobile.svg" alt="mosquito free">
         </div>
-        <div class="py-4 px-4 w-full">
-          <p class="md:text-base text-sm text-[#525252]"><span class="font-semibold">Step 4.</span> Application is a
-            breeze!
-            Clothes, prams, car seats. Stick and go... No mess, no fuss.</p>
+        <div class=" w-44 py-3.5 px-5">
+          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 4</span> <br> Choose the right
+            Application is a breeze! Clothes, prams, car seats. Stick and go... No mess, no fuss.</p>
         </div>
       </div>
-
       <!-- Card 5 -->
       <div
-        class="md:w-[239px] md:h-[330px] w-full h-full flex md:flex-col  rounded-2xl border border-[#ECECE0] items-center overflow-hidden ">
-        <div class="   w-full ">
-
-          <img class="w-full object-cover hidden sm:block" src="../images/rectangle5.svg" alt="mosquito free">
-          <img class="size-[108px] rounded-full  object-cover md:hidden sm:hidden" src="../images/rectangle5mobile.svg"
-            alt="mosquito free">
+        class="w-80 h-32 md:size-full lg:w-60 lg:h-80 py-2 lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
+        <div class="   ">
+          <img class="  hidden lg:block" src="../images/rectangle5.svg" alt="mosquito free">
+          <img class=" rounded-4xl  object-cover 
+           lg:hidden " src="../images/rectangle5mobile.svg" alt="mosquito free">
         </div>
-        <div class="py-4 px-4 w-full">
-          <p class="md:text-base text-sm text-[#525252]"><span class="font-semibold">Step 5.</span> Now watch your kids
-            play,
-            explore, and laugh without a single mosquito in sight!</p>
+        <div class=" w-44 py-3.5 px-5">
+          <p class=" lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 5</span> <br>Now watch your kids
+            play, explore, and laugh without a single mosquito in sight!</p>
         </div>
       </div>
+
+
+
+
     </div>
   </section>
 
@@ -571,42 +579,41 @@
 
   <!--  Oil Naturel  -->
   <div class=" bg-blue-50 py-6 w-full ">
-    <div class="  my-4 container mx-auto md:px-8 py-2 ">
+    <div class="  my-4 2xl:container mx-auto md:px-8 ">
       <h1 class="md:hidden  font-bold text-2xl  text-center text-wrap ">Natural Strength <br> for Natural Protection
       </h1>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 justify-center items-center  mx-auto ">
+      <div class="grid grid-cols-1 lg:grid-cols-2  p gap-2 justify-center items-center  mx-auto ">
         <!-- Card 1 with Parsley -->
-        <div class="relative overflow-hidden md:py-12 py-4">
+        <div class="relative overflow-hidden lg:py-12 p-1  ">
           <img src="../images/Parsley.png" alt="Parsley"
             class="absolute md:left-0 -left-5 md:-bottom-8  -bottom-15  md:w-1/3  z-0" />
 
           <!-- White card with content -->
           <div
-            class="relative mx-auto bg-white rounded-3xl lg:rounded-tr-[207px] shadow z-10  md:w-[438px]  w-[305px] h-full ">
-            <div class="flex flex-col items-center text-center w-full p-12">
-              <img class="object-contain md:w-[286px] w-[138px] " src="../images/oil_img.svg" alt="Citronella Oil" />
-              <h2 class="text-2xl font-bold text-[#525252]">Citronella Oil</h2>
-              <p class="md:text-base text-[#434343]">
+            class="relative mx-auto bg-white rounded-3xl px-3 lg:py-8  lg:rounded-tr-[207px] shadow-2xs z-10  w-80 h-64 lg:w-96 lg:h-72 ">
+            <div class="flex flex-col items-center text-center  w-full">
+              <img class="object-cover w-36 h-28  px-5 " src="../images/oil_img.svg" alt="Citronella Oil" />
+              <h2 class="text-2xl font-bold text-neutral-600">Citronella Oil</h2>
+              <p class="md:text-base text-neutral-700">
                 The heart of our patches, providing an invisible shield against those annoying mosquitoes.
                 Outdoor activities are back on the menu!
               </p>
             </div>
           </div>
         </div>
-        <!-- card2 -->
-        <div class="relative overflow-hidden md:py-12 pb-4">
+        <!-- card 2 with Mint -->
+        <div class="relative overflow-hidden lg:py-12 py-8 px-1  ">
           <img src="../images/Mint.png" alt="Parsley"
-            class="absolute md:-right-6 -right-16 md:-bottom-3 -bottom-15   md:w-1/3  z-0" />
+            class="absolute md:right-0 -right-5 md:-bottom-8  -bottom-15  md:w-1/3  z-0" />
 
           <!-- White card with content -->
           <div
-            class="relative mx-auto bg-white rounded-3xl lg:rounded-tl-[207px] shadow z-10  md:w-[438px]  w-[305px] h-full ">
-            <div class="flex flex-col items-center text-center w-full p-12">
-              <img class="object-contain md:w-[286px] w-[138px] " src="../images/oil_img.svg" alt="Citronella Oil" />
-              <h2 class="text-2xl font-bold text-[#525252]">Citronella Oil</h2>
-              <p class="md:text-base text-[#434343]">
-                The heart of our patches, providing an invisible shield against those annoying mosquitoes.
-                Outdoor activities are back on the menu!
+            class="relative mx-auto bg-white rounded-3xl px-3 lg:p-8 lg:rounded-tl-[207px] shadow-2xs z-10  w-80 h-64 lg:w-96 lg:h-72 ">
+            <div class="flex flex-col items-center text-center  w-full">
+              <img class="object-contain w-36 h-28 px-5" src="../images/oil_img_pepermint.svg" alt="Citronella Oil" />
+              <h2 class="text-2xl font-bold text-neutral-600">Peppermint Oil</h2>
+              <p class="md:text-base text-neutral-700">
+                Cool, refreshing, and a nightmare for bugs. It's like giving mosquitoes the cold shoulder, with style!
               </p>
             </div>
           </div>
@@ -616,43 +623,46 @@
   </div>
 
   <!-- Oil Naturel  -->
+
+
+
+
+
+
   <!-- single product section -->
 
-
-
-
-  <div class="  container mx-auto sm:w-full w-auto  py-4  bg-white border-b  border-gray-400 ">
-    <div class=" grid lg:grid-cols-2  md:grid-cols-1 mx-auto  sm:px-8 gap-8">
-      <div class="flex flex-col-reverse md:flex-row gap-2 sm:gap-4 flex-1 w-full ">
+  <div class="2xl:container mx-auto m-0  ">
+    <div class="bg-white border-b lg:pt-16  border-gray-400 grid lg:grid-cols-2  md:grid-cols-1 mx-auto   gap-8">
+      <div class="flex flex-col-reverse lg:flex-row gap-2  flex-1 w-full ">
         <!-- left content -->
 
-        <div class="flex  sm:flex-row flex-col-reverse  gap-2  w-full   md:w-[623px]  overflow-x-auto">
+        <div class="flex  lg:flex-row flex-col-reverse  gap-2 md:p-2      overflow-x-auto">
           <!-- Thumbnails -->
-          <div class="flex sm:flex-col  gap-2 p-1   overflow-x-auto  md:overflow-hidden whitespace-nowrap">
+          <div class="flex lg:flex-col  gap-2   mx-1 overflow-x-auto  md:overflow-hidden whitespace-nowrap">
             <img src="../images/product1.svg"
-              class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 rounded-lg    md:w-[97px] w-[54px]  inline-block"
+              class="cursor-pointer transition-transform w-14 h-12 md:w-24 md:h-24 duration-300 ease-in-out hover:scale-105 rounded-md lg:rounded-xl   object-cover    inline-block"
               alt="Thumbnail 1" id="thumb1">
             <img src="../images/product2.svg"
-              class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 rounded-lg   object-cover md:w-[97px] w-[54px]  inline-block"
+              class="cursor-pointer transition-transform w-14 h-12 md:w-24 md:h-24  duration-300 ease-in-out hover:scale-105 rounded-md lg:rounded-xl   object-cover   inline-block"
               alt="Thumbnail 2" id="thumb2">
             <img src="../images/product3.svg"
-              class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 rounded-lg   object-cover md:w-[97px] w-[54px]  inline-block"
+              class="cursor-pointer transition-transform w-14 h-12 md:w-24 md:h-24  duration-300 ease-in-out hover:scale-105 rounded-md lg:rounded-xl   object-cover   inline-block"
               alt="Thumbnail 3" id="thumb3">
             <img src="../images/product4.svg"
-              class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 rounded-lg bg-[#E3E3E3]  object-cover md:w-[97px] w-[54px]  inline-block"
+              class="cursor-pointer transition-transform w-14 h-12 md:w-24 md:h-24  duration-300 ease-in-out hover:scale-105 rounded-md lg:rounded-xl bg-[#E2E2E2]  object-cover   inline-block"
               alt="Thumbnail 4" id="thumb4">
             <img src="../images/product5.svg"
-              class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 rounded-lg bg-[#E3E3E3]  object-cover md:w-[97px] w-[54px]  inline-block"
+              class="cursor-pointer transition-transform w-14 h-12 md:w-24 md:h-24  duration-300 ease-in-out hover:scale-105 rounded-md lg:rounded-xl bg-[#E2E2E2]  object-cover   inline-block"
               alt="Thumbnail 5" id="thumb5">
             <img src="../images/product6.svg"
-              class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 rounded-lg bg-[#E3E3E3]  object-cover md:w-[97px] w-[54px]  inline-block"
+              class="cursor-pointer transition-transform w-14 h-12 md:w-24 md:h-24  duration-300 ease-in-out hover:scale-105 rounded-md lg:rounded-xl bg-[#E2E2E2]  object-cover   inline-block"
               alt="Thumbnail 6" id="thumb6">
           </div>
 
           <!-- Main Image -->
           <div class="imagebox">
-            <img src="../images/thumbnail.png" id="screen" class="bg-center object-cover aspect-square md:rounded-lg rounded-none
-    w-[623px] transition-all duration-300 scale-100 opacity-100">
+            <img src="../images/thumbnail.png" id="screen" class="bg-center object-cover aspect-square md:rounded-2xl  rounded-none  w-full    lg:w-[623px] lg:h-[623px]
+    transition-all duration-300 scale-100 opacity-100">
           </div>
           <!-- End Main Image -->
 
@@ -661,27 +671,29 @@
 
 
       <!-- Right content  -->
-      <div class="flex flex-col pt-0 gap-y-6 sm:gap-y-2 md:px-7 px-4 w-full ">
-        <div class=" flex flex-col gap-3 md:w-[450px] w-full    ">
+      <div class="flex flex-col pt-0 lg:pt-8 lg:gap-y-6 gap-y-2 md:px-5  w-full ">
+        <div class=" flex flex-col gap-3 lg:w-[450px] w-full    ">
           <h1
-            class="sm:text-4xl text-3xl font-bold text-gray-900 mb-4 sm:text-wrap sm:text-start text-center   md:order-1 order-2">
+            class="lg:text-4xl md:text-3xl text-2xl md:px-2 lg:px-0 font-bold text-gray-900  lg:text-wrap sm:text-start text-center   md:order-1 order-2">
             BuggyPatch Insect Repellent Patches</h1>
 
 
           <!-- Features  -->
-          <div class="flex flex-col gap-y-4 sm:w-full   p-2   sm:order-3 order-3">
-
-            <ul class="md:text-base text-sm  font-bold text-[#434343] sm:text-medium  ">
-              <li class="flex mb-2 items-center gap-2   ">
-                <img src="../images/anti mosquito.svg" alt="Icon">Keep your kids free from mosquito bites
+          <div class="flex flex-col gap-y-4 w-full    px-2  sm:order-3 order-3">
+            <ul class="flex flex-col gap-1.5 md:text-xl text-base font-bold   ">
+              <li class="flex mb-2 items-center gap-2.5 ">
+                <img src="../images/anti mosquito.svg" class="size-8 lg:size-11" alt="Icon">Keep your kids free from
+                mosquito bites
               </li>
-              <li class="flex mb-2 items-center gap-2  ">
-                <img src="../images/naturel.svg" alt="Icon">Stay safe with natural ingredients
+              <li class="flex mb-2 items-center gap-2.5 ">
+                <img src="../images/naturel.svg" class="size-8 lg:size-11" alt="Icon">Stay safe with natural ingredients
               </li>
-              <li class="flex mb-2 items-center gap-2  ">
-                <img src="../images/non-toxic.svg" alt="Icon">Enjoy non-sticky, non-toxic protection
+              <li class="flex mb-2 items-center gap-2.5 ">
+                <img src="../images/non-toxic.svg" class="size-8 lg:size-11" alt="Icon">Enjoy non-sticky, non-toxic
+                protection
               </li>
             </ul>
+
           </div>
 
 
@@ -689,32 +701,32 @@
 
 
           <!-- Rating Container -->
-          <div class="flex flex-row  items-center md:justify-start justify-center  w-full  max-w-md md:order-2 order-1">
+          <div class="flex flex-row px-5 lg:px-0  items-center md:justify-start justify-center   order-1 lg:order-2">
             <!-- User Avatars -->
-            <div class="flex -space-x-2 mr-2">
-              <img class="inline-block h-8 w-8 rounded-full border " src="../images/person1.svg" alt="user" />
-              <img class="inline-block h-8 w-8 rounded-full border " src="../images/person2.svg" alt="user" />
-              <img class="inline-block h-8 w-8 rounded-full border " src="../images/person3.svg" alt="user" />
-              <img class="inline-block h-8 w-8 rounded-full border " src="../images/person4.svg" alt="user" />
+            <div class="flex -space-x-3 px-2 ">
+              <img class="inline-block h-8 w-8 rounded-full " src="../images/person1.svg" alt="user" />
+              <img class="inline-block h-8 w-8 rounded-full " src="../images/person2.svg" alt="user" />
+              <img class="inline-block h-8 w-8 rounded-full " src="../images/person3.svg" alt="user" />
+              <img class="inline-block h-8 w-8 rounded-full " src="../images/person4.svg" alt="user" />
             </div>
 
 
             <!-- Rating Text -->
-            <div class="">
-              <p class="md:text-base truncate text-xs   font-normal">Rating & 67K+ Happy Customers</p>
+            <div class=" text-black text-sm lg:text-lg font-normal  lg:leading-normal leading-tight">
+              Rating & 67K+ Happy Customers
             </div>
           </div>
 
 
 
 
-
         </div>
         <!-- Packs -->
-        <div class="my-4 w-full max-w-lg md:px-4 mx-auto">
-          <div class="grid grid-cols-4 gap-1 md:gap-4">
+        <div class=" w-full  px-4 mx-auto">
+          <div class="grid grid-cols-4 gap-3.5 md:gap-4">
             <!-- 1 Pack -->
-            <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-400">
+            <label
+              class="pack-option w-20 h-16 relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-400">
               <input type="radio" name="pack" class="sr-only" checked>
               <div class="pack-content p-2 text-center">
                 <div class="text-xs md:text-sm font-medium">1 PACK</div>
@@ -729,7 +741,8 @@
             </label>
 
             <!-- 2 Pack -->
-            <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
+            <label
+              class="pack-option w-20 h-16 relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
               <input type="radio" name="pack" class="sr-only">
               <div class="pack-content p-2 text-center">
                 <div class="text-xs md:text-sm font-medium">2 PACK</div>
@@ -744,7 +757,8 @@
             </label>
 
             <!-- 3 Pack -->
-            <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
+            <label
+              class="pack-option w-20 h-16 relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
               <input type="radio" name="pack" class="sr-only">
               <div class="pack-content p-2 text-center">
                 <div class="text-xs md:text-sm font-medium">3 PACK</div>
@@ -759,7 +773,8 @@
             </label>
 
             <!-- 4 Pack -->
-            <label class="pack-option relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
+            <label
+              class="pack-option w-20 h-16 relative border border-gray-300 rounded-lg cursor-pointer hover:border-gray-500">
               <input type="radio" name="pack" class="sr-only">
               <div class="pack-content p-2 text-center">
                 <div class="text-xs md:text-sm font-medium">4 PACK</div>
@@ -790,26 +805,35 @@
             });
           </script>
         </div>
-        <div class="grid grid-rows-2   w-full text-center">
-          <div class="flex flex-col  border-b border-gray-300 sm:flex-row justify-center items-center gap-2 md:gap-2">
-            <p class="text-4xl md:text-nowrap font-bold">$14.99 USD <br><span
-                class="text-sm sm:text-base font-normal">Tax
+        <div class="grid grid-rows-2    w-full text-center">
+          <div class="flex flex-col  lg:flex-row justify-center items-center gap-1 ">
+            <p class=" text-black text-2xl font-bold leading-7">$14.99 USD <br><span
+                class="text-base font-normal leading-tight">Tax
                 included</span></p>
+
             <button
-              class="px-4  md:px-8 block transition-transform duration-300 ease-in-out hover:scale-95  md:h-[65px] w-full py-2 rounded-4xl font-semibold text-white text-lg sm:text-xl uppercase  bg-[#9B046F]">
+              class="mx-auto w-76 h-14 px-2  block transition-transform duration-300 ease-in-out hover:scale-95   rounded-4xl font-semibold text-white text-lg  uppercase   opacity-90 bg-gradient-to-b from-pink-600 to-pink-900  ">
               Try It Now
             </button>
+
+
           </div>
 
-          <!-- Trust Badges -->
-          <div class="w-full sm:w-[450px]  py-6 mx-auto">
-            <ul class="grid grid-cols-3  md:gap-4 gap-2   justify-items-center">
-              <li class="flex gap-1 text-[10px] md:text-sm font-light items-center"><img src="../images/Vector1.svg"
-                  alt="Trust Badge"> 30-day Money Back Guarantee</li>
-              <li class="flex gap-1 text-[10px] md:text-sm font-light items-center"><img src="../images/Vector2.svg"
-                  alt="Trust Badge"> Free Shipping</li>
-              <li class="flex gap-1 text-[10px] md:text-sm font-light items-center"><img src="../images/Vector3.svg"
-                  alt="Trust Badge"> 24/7 Customer Support</li>
+          <!-- Trust badges -->
+          <div class="mx-auto py-3 px-7">
+            <ul class="grid grid-cols-3  items-center gap-6 md:gap-8 text-start">
+              <li class="flex items-center gap-2 md:text-sm text-xs">
+                <img src="../images/Vector1.svg" alt="Trust Badge" class="w-7 h-8">
+                <span>30-day money <br> back Guarantee</span>
+              </li>
+              <li class="flex items-center gap-2 md:text-sm text-xs">
+                <img src="../images/Vector2.svg" alt="Trust Badge" class="w-7 h-8">
+                <span>Free <br> Shipping</span>
+              </li>
+              <li class="flex items-center gap-2 md:text-sm text-xs">
+                <img src="../images/Vector3.svg" alt="Trust Badge" class="w-7 h-8">
+                <span>24/7 Customer <br> support</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -843,47 +867,78 @@
   </div>
   </div>
 
-  <section class="w-full max-w-4xl mx-auto py-4 md:py-8 px-4 relative ">
-    <!-- Background circle decoration - only visible on larger screens -->
-    <!-- <div class="hidden md:block absolute left-0 bottom-0 w-1/2  h-full bg-blue-50 rounded-full transform translate-x-[-40%] translate-y-[20%] z-0 opacity-80"></div> -->
+  <section class="w-full max-w-4xl mx-auto py-4 md:py-8 px-0 relative ">
 
     <div class="relative z-10 ">
       <!-- Header -->
-      <div class="text-center py-3 md:py-4 mb-4 md:mb-8">
+      <div class="text-center py-3 md:py-4 mb-1 md:mb-8">
         <h1 class="text-xl md:text-3xl font-bold">Make the Right<br>Choice for Your Child</h1>
       </div>
 
       <!-- Table Container -->
-      <div class="bg-white rounded-lg shadow-lg md:overflow-hidden  overflow-x-auto">
+      <div class="bg-white rounded-lg mt-5  md:overflow-hidden  ">
         <div class="table-wrapper">
           <table class="w-full min-table-width">
             <!-- Header Row -->
             <thead>
               <tr>
-                <th class="p-2 md:p-4 text-left font-medium text-gray-600">Category</th>
-                <th class="p-2 md:p-4 bg-green-100 text-center">
-                  <div class="flex flex-col items-center">
-                    <img src="../images/poroduct_icon.svg" alt="BuggyPatch Products"
-                      class="h-10 md:h-16 lg:h-20 mb-1 md:mb-2">
-                    <span class="font-bold text-sm md:text-base lg:text-lg">BuggyPatch</span>
+                <th class=" mx-auto "></th>
+
+                <th class="">
+                  <div class="mt-8 h-22 rounded-t-2xl bg-emerald-100 flex justify-center relative">
+
+                    <img src="../images/poroduct_icon.svg" alt="BuggyPatch Products" class="w-18 -mt-4 h-18  ">
+
                   </div>
                 </th>
-                <th class="p-2 md:p-4 bg-red-50 text-center">
-                  <div class="flex flex-col items-center">
-                    <img src="../images/spray_icon.svg" alt="Sprays" class="h-8 md:h-12 lg:h-16 mb-1 md:mb-2">
-                    <span class="font-bold text-sm md:text-base lg:text-lg">Sprays</span>
+                <th class="">
+                  <div class="mt-16  bg-red-50 flex justify-center">
+
+                    <img src="../images/spray_icon.svg" alt="BuggyPatch Products" class="w-18 -mt-4 h-18">
+
                   </div>
                 </th>
-                <th class="p-2 md:p-4 bg-red-50 text-center">
-                  <div class="flex flex-col items-center">
-                    <img src="../images/bottle_icon.svg" alt="Lotions" class="h-8 md:h-12 lg:h-16 mb-1 md:mb-2">
-                    <span class="font-bold text-sm md:text-base lg:text-lg">Lotions</span>
+                <th class="">
+                  <div class="mt-16  bg-red-50 opacity-50 flex justify-center">
+
+                    <img src="../images/bottle_icon.svg" alt="BuggyPatch Products" class="w-18 -mt-4 h-18">
+
                   </div>
                 </th>
-                <th class="p-2 md:p-4 bg-red-50 text-center">
+                <th class="">
+                  <div class="mt-16 rounded-tr-2xl  bg-red-50 flex justify-center">
+
+                    <img src="../images/kindle_icon.svg" alt="BuggyPatch Products" class="w-18 -mt-4 h-18">
+
+                  </div>
+                </th>
+
+              </tr>
+              <tr>
+                <th class="w-22 py-10   font-bold text-black text-xs">Category</th>
+                <th class=" w-22 h-20 bg-emerald-100  text-center">
                   <div class="flex flex-col items-center">
-                    <img src="../images/kindle_icon.svg" alt="Candles" class="h-8 md:h-12 lg:h-16 mb-1 md:mb-2">
-                    <span class="font-bold text-sm md:text-base lg:text-lg">Candles</span>
+                    <!-- <img src="../images/poroduct_icon.svg" alt="BuggyPatch Products"
+                      class="h-10 md:h-16 lg:h-20 mb-1 md:mb-2"> -->
+                    <span class="font-bold text-black text-xs md:text-base lg:text-lg   ">BuggyPatch</span>
+                  </div>
+                </th>
+                <th class="w-24  bg-red-50 text-center">
+                  <div class="flex flex-col items-center">
+                    <!-- <img src="../images/spray_icon.svg" alt="Sprays" class="h-8 md:h-12 lg:h-16 mb-1 md:mb-2"> -->
+                    <span class="font-bold text-black text-xs md:text-base lg:text-lg">Sprays</span>
+                  </div>
+                </th>
+                <th class="w-24  bg-red-50 opacity-50 text-center">
+                  <div class="flex flex-col items-center">
+                    <!-- <img src="../images/bottle_icon.svg" alt="Lotions" class="h-8 md:h-12 lg:h-16 mb-1 md:mb-2"> -->
+                    <span class="font-bold text-black text-xs  md:text-base lg:text-lg">Lotions</span>
+                  </div>
+                </th>
+                <th class="w-24  bg-red-50 text-center">
+                  <div class="flex flex-col items-center">
+                    <!-- <img src="../images/kindle_icon.svg" alt="Candles" class="h-8 md:h-12 lg:h-16 mb-1 md:mb-2"> -->
+                    <span class="font-bold text-black text-xs md:text-base lg:text-lg">Candles</span>
                   </div>
                 </th>
               </tr>
@@ -893,102 +948,144 @@
             <tbody>
               <!-- Apply to skin -->
               <tr>
-                <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Apply to skin</td>
-                <td class="p-2 md:p-4 bg-green-100 text-center border-t">
-                  <div class="font-medium text-sm md:text-base lg:text-lg">No</div>
-                  <div class="text-xs md:text-sm text-gray-600">Sticks to clothes</div>
+                <td class="p-1 w-24 md:p-4 text-left font-medium text-gray-600 border-slate-100 border-t">Apply to skin
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                <td class="p-1 w-24 md:p-4 bg-green-100 border-green-200 text-center border-t">
+                  <div class=" font-medium text-sm md:text-base lg:text-lg">No</div>
+                  <div class=" text-xs md:text-sm text-gray-600">Sticks to clothes</div>
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Yes
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">No
+                <td
+                  class="p-1 md:p-4 bg-red-50 border-red-100  opacity-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Yes
+                </td>
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  No
                 </td>
               </tr>
 
               <!-- Contains chemicals -->
               <tr>
-                <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Contains chemicals</td>
-                <td class="p-2 md:p-4 bg-green-100 text-center border-t">
+                <td class="w-24 p-1 md:p-4 text-left font-medium text-gray-600 border-slate-100 border-t">Contains
+                  chemicals</td>
+                <td class="w-24 p-1 md:p-4 bg-green-100 border-green-200 text-center border-t">
                   <div class="font-medium text-sm md:text-base lg:text-lg">No</div>
                   <div class="text-xs md:text-sm text-gray-600">Only essential oils</div>
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Yes
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                <td
+                  class="p-1 md:p-4 bg-red-50 border-red-100  opacity-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Yes
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Yes
                 </td>
               </tr>
 
               <!-- Unpleasant chemical smell -->
               <tr>
-                <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Unpleasant chemical smell</td>
-                <td class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">No
+                <td class="w-24 p-1 md:p-4 text-left font-medium text-gray-600 border-slate-100 border-t">Unpleasant
+                  chemical smell</td>
+                <td
+                  class="w-24 p-1 md:p-4 bg-green-100 border-green-200 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  No
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100  text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Yes
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                <td
+                  class="p-1 md:p-4 bg-red-50 border-red-100  opacity-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Yes
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Yes
                 </td>
               </tr>
 
               <!-- Toxicity -->
               <tr>
-                <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Toxicity</td>
+                <td class="w-24 p-1 md:p-4 text-left font-medium text-gray-600 border-slate-100 border-t">Toxicity</td>
                 <td
-                  class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">
+                  class="w-24 p-1 md:p-4 bg-green-100 border-green-200 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">
                   Non-Toxic</td>
                 <td
-                  class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100  text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">
                   Toxic</td>
                 <td
-                  class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100  opacity-50  text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">
                   Toxic</td>
                 <td
-                  class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100 text-center font-medium text-sm md:text-base lg:text-lg text-red-600 border-t">
                   Toxic</td>
               </tr>
 
               <!-- Duration of effect -->
               <tr>
-                <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Duration of effect</td>
+                <td class="w-24 p-1 md:p-4 text-left font-medium text-gray-600 border-slate-100 border-t">Duration of
+                  effect</td>
                 <td
-                  class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">
+                  class="w-24 p-1 md:p-4 bg-green-100 border-green-200 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">
                   Up to 3 days!</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Up to
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100  - text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Up to
                   6 hours</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Up to
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100  opacity-50  text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Up to
                   6 hours</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Up to
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Up to
                   3 hours</td>
               </tr>
 
               <!-- Stickiness on skin -->
               <tr>
-                <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Stickiness on skin</td>
-                <td class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">No
+                <td class="w-24 p-1 md:p-4 text-left font-medium text-gray-600  border-slate-100 border-t">Stickiness on
+                  skin</td>
+                <td
+                  class="w-24 p-1 md:p-4 bg-green-100 border-green-200 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  No
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100  text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Yes
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">Yes
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100  opacity-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                  Yes
                 </td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">
                   Airborne</td>
               </tr>
 
               <!-- Causes allergies -->
               <tr>
-                <td class="p-2 md:p-4 text-left font-medium text-gray-600 border-t">Causes allergies</td>
+                <td class="w-24 p-1 md:p-4 text-left font-medium text-gray-600 border-slate-100 border-t">Causes
+                  allergies</td>
                 <td
-                  class="p-2 md:p-4 bg-green-100 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">
+                  class="w-24 p-1 md:p-4 bg-green-100 border-green-200 text-center font-medium text-sm md:text-base lg:text-lg text-green-700 border-t">
                   Allergy-free</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100  text-center font-medium text-sm md:text-base lg:text-lg border-t">
                   Possible</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100   opacity-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
                   Possible</td>
-                <td class="p-2 md:p-4 bg-red-50 text-center font-medium text-sm md:text-base lg:text-lg border-t">
+                <td
+                  class="w-24 p-1 md:p-4 bg-red-50 border-red-100 text-center font-medium text-sm md:text-base lg:text-lg border-t">
                   Possible</td>
               </tr>
             </tbody>
@@ -1002,53 +1099,57 @@
 
   <!-- Say Goodbye sectin  -->
   <section
-    class="mx-auto h-full sm:bg-[url('../images/background.png')] bg-[#f6fbff] py-4 bg-cover bg-center bg-no-repeat ">
-    <div class="flex flex-col md:flex-row items-center">
+    class="2xl:container  mx-auto h-full lg:bg-[url('../images/background.png')] py-4 bg-cover bg-center bg-no-repeat ">
+    <div class="flex flex-col lg:flex-row px-6 items-center bg-[#f6fbff] ">
       <!-- Image Section -->
-      <div class="md:w-1/3  w-full px-4 ">
-        <!-- <h1 class="md:text-3xl text-2xl font-bold mb-4 text-center ">Say Goodbye to Itchy Nights with Our
-          ScratchyPatch Bundle</h1> -->
+      <div class="lg:w-1/3  w-full px-8 ">
+
+        <h1 class="text-3xl font-bold mb-4 text-center block lg:hidden">Say Goodbye to Itchy Nights with Our
+          ScratchyPatch Bundle</h1>
         <img src="../images/ScratchyPatchBundle.png" alt="ScratchyPatch Bundle"
-          class="md:w-[383px] md:h-[390px] w-full h-full   mx-auto">
+          class="lg:w-[383px] lg:h-[390px] w-1/2 h-1/2   mx-auto">
       </div>
 
       <!-- Text and Button Section -->
-      <div class="md:w-1/2 px-4 text-center md:text-left">
+      <div class="lgg:w-1/2 px-4 text-center lg:text-left">
         <div class="flex flex-col items-center">
-          <h1 class="text-3xl font-bold mb-4 text-center sm:block hidden">Say Goodbye to Itchy Nights with Our
+          <h1 class="text-3xl font-bold mb-4 text-center lg:block hidden">Say Goodbye to Itchy Nights with Our
             ScratchyPatch Bundle</h1>
           <p class="mb-4 text-center ">ScratchyPatch Bundle is here to end your child's itch-nightmare.</p>
           <p class="mb-4 text-center">Instant relief? Check! Happiness without redness? You got it! Imagine a day
             filled with play and zero annoyances from bites. Cool, right? But we're not done!</p>
           <p class="mb-4 text-center">Think of a gentle forest breeze or grandma's touch, all bundled up and soothing
             away irritation. Ready for sweet relief? Grab your bundle, and never look back!</p>
+
           <button
-            class="bg-[#9B046F] hover:bg-[#A50853] sm:w-[255px] w-full text-white font-bold py-2 px-8 rounded-full self-center md:self-center">TRY
-            IT NOW</button>
+            class="mx-auto w-76 h-14 px-2  block transition-transform duration-300 ease-in-out hover:scale-95   rounded-4xl font-semibold text-white text-lg  uppercase   opacity-90 bg-gradient-to-b from-pink-600 to-pink-900  ">
+            Try It Now
+          </button>
         </div>
       </div>
   </section>
 
 
-  <section class=" mx-auto bg-white py-12 px-6 md:px-20">
-    <div class=" flex flex-col md:flex-row items-center">
+  <section class="2xl:container    mx-auto  py-12 px-6 lg:px-20">
+    <div class=" flex flex-col lg:flex-row items-center bg-white">
 
       <!-- Image Section -->
-      <div class="md:w-1/2 px-4 flex justify-center md:justify-start">
-        <img src="../images/logos.png" alt="Buggy Patch Promise" class="sm:block hidden ">
+      <div class="lg:w-1/2 w-full  px-4 flex justify-center lg:justify-start">
+        <img src="../images/logos.png" alt="Buggy Patch Promise" class="lg:block hidden ">
         <img src="../images/Dollar_sign_pic.png" alt="Buggy Patch Promise"
-          class="block sm:hidden max-w-full sm:max-w-sm">
+          class="block lg:hidden max-w-full lg:max-w-sm">
       </div>
 
       <!-- Text Section -->
-      <div class="md:w-1/2 w-full md:px-4 mx-auto  mt-6 md:mt-0">
-        <h2 class="md:text-3xl text-xl text-center md:text-left w-full    font-bold mb-4 ">A Promise You Can Trust for
+      <div class="lg:w-1/2 w-full lg:px-4 mx-auto  mt-6 lg:mt-0">
+        <h2 class="lg:text-3xl md:text-2xl text-xl text-center lg:text-left w-full    font-bold mb-4 ">A Promise You Can
+          Trust for
           Itch-Free Happiness</h2>
-        <p class="mb-4 text-center md:text-base text-xs md:text-left">Got worries? Toss 'em out! Those bug bites
+        <p class="mb-4 text-center lg:text-base text-xs lg:text-left">Got worries? Toss 'em out! Those bug bites
           bothering your kids won't
           stand a chance. And guess
           what?</p>
-        <p class="md:text-base text-xs text-center md:text-left">If our magical patches don't win you over in 30 days,
+        <p class="lg:text-base text-xs text-center lg:text-left">If our magical patches don't win you over in 30 days,
           your money's
           back in your pocket. No drama, no hassle. That's a promise!</p>
       </div>
@@ -1059,33 +1160,33 @@
 
 
   <!-- MOSQUITO SECTION  -->
-  <section class=" mx-auto relative">
-    <div class="flex flex-col md:flex-row items-center overflow-hidden">
+  <section class="2xl:container  mx-auto relative">
+    <div class="flex flex-col lg:flex-row items-center overflow-hidden">
       <!-- Image Section -->
-      <div class="md:w-1/2 w-full">
+      <div class="lg:w-1/2 w-full">
         <img src="../images/happyPatch.png" alt="Happy Patch Company"
           class="block w-full h-full object-cover object-center">
       </div>
 
       <!-- Text Section -->
-      <div class="md:w-1/2 md:px-8 md:py-12 py-6 w-full md:text-left text-center px-4">
-        <h1 class="text-2xl  uppercase font-bold  md:text-start text-center">Get to Know <br>
+      <div class="lg:w-1/2 md:px-8 lg:py-12 py-6 w-full lg:text-left text-center px-4">
+        <h1 class="text-2xl  uppercase font-bold  lg:text-start text-center">Get to Know <br>
           THE HAPPY PATCH COMPANY</h1>
-        <p class="mb-4 md:text-start text-center md:text-base text-xs text-[#434343]">Welcome to THE HAPPY PATCH CO,
+        <p class="mb-4 lg:text-start text-center lg:text-base text-xs text-[#434343]">Welcome to THE HAPPY PATCH CO,
           where the buzz
           stops and the fun
           begins. We're not just about patches; we're a mosquito's worst nightmare and your new best friend.</p>
-        <p class="mb-4 sm:text-start text-center md:text-base text-xs text-[#434343]">You see, we looked at those flying
+        <p class="mb-4 lg:text-start text-center lg:text-base text-xs text-[#434343]">You see, we looked at those flying
           nuisances and
           thought, "Enough!"
           We
           rolled up our sleeves and dived headlong into the world of peppermint and citronella, mixing a little magic
           with a sprinkle of innovation.</p>
-        <p class="mb-4 sm:text-start text-center md:text-base text-xs text-[#434343]">The result? Mosquito patches that
+        <p class="mb-4 lg:text-start text-center lg:text-base text-xs text-[#434343]">The result? Mosquito patches that
           put the "ow" in
           "WOW" for those
           bugs. But why stop there? Our Scratchy Patch Relief Patches aren't just products; they're a philosophy.</p>
-        <p class="mb-4 sm:text-start text-center md:text-base text-xs text-[#434343]">They're a testament to our
+        <p class="mb-4 lg:text-start text-center lg:text-base text-xs text-[#434343]">They're a testament to our
           relentless quest to
           banish discomfort
           from
@@ -1102,7 +1203,7 @@
   <!-- Accordin section -->
   <div class=" bg-[#F1FAFF]">
     <div class="container mx-auto max-w-3xl mt-10 ">
-      <div class="divide-y divide-gray-100 py-8 sm:px-0 px-4 ">
+      <div class="divide-y divide-gray-100 py-8 lg:px-0 px-4 ">
 
         <h1 class="text-2xl sm:text-4xl text-center font-bold text-black mb-6">Frequently Asked Questions</h1>
         <details class="group bg-white my-4 rounded-2xl" open>
