@@ -36,7 +36,7 @@
     </div>
 
     <!-- Hamburger (mobile) -->
-    <div class="lg:hidden absolute right-7 pt-3.5">
+    <div class="lg:hidden absolute right-7 pt-3.5 ">
       <button id="menu-toggle" class="text-[#ED72C0] focus:outline-none">
         <img src="../images/hambergerMenu.svg" alt="Menu" class="w-6 h-6">
       </button>
@@ -54,12 +54,12 @@
 
     <!-- Mobile Menu -->
     <nav id="mobile-menu"
-      class="absolute top-20 left-0 text-center w-full bg-[#f8f8f8] shadow-md px-4 py-4 hidden lg:hidden z-50">
+      class="absolute top-20 left-0 text-center w-full bg-[#f8f8f8] shadow-md px-4 py-4 hidden lg:hidden z-20">
       <ul class="flex flex-col space-y-2 font-harmonia font-normal capitalize">
-        <li><a href="#" class="block hover:text-[#ED72C0]">Buggy Patch</a></li>
-        <li><a href="#" class="block hover:text-[#ED72C0]">How it works</a></li>
-        <li><a href="#" class="block hover:text-[#ED72C0]">Benefits</a></li>
-        <li><a href="#" class="block hover:text-[#ED72C0]">Shop now</a></li>
+        <li><a href="#" class="block hover:text-[#ED72C0] ">Buggy Patch</a></li>
+        <li><a href="#" class="block hover:text-[#ED72C0] ">How it works</a></li>
+        <li><a href="#" class="block hover:text-[#ED72C0] ">Benefits</a></li>
+        <li><a href="#" class="block hover:text-[#ED72C0] ">Shop now</a></li>
       </ul>
     </nav>
   </header>
@@ -77,9 +77,9 @@
 
 
   <!-- Hero section -->
-  <section class="2xl:container mx-auto text-neutral-700   w-full  py-7 lg:py-0  -mt-6 lg:-mt-6 px-3">
+  <section class="2xl:container mx-auto text-neutral-700   w-full   lg:py-0  -mt-6 lg:-mt-6 ">
     <div
-      class="grid lg:grid-cols-2 lg:bg-[#F8F8F3] bg-[#F0F0E8] grid-cols-1 lg:pt-15.5  items-start  w-full h-full  mx-auto   ">
+      class="grid lg:grid-cols-2 lg:bg-[#F8F8F3] bg-[#F0F0E8] grid-cols-1 lg:pt-15.5  py-6  lg:py-0 px-8 items-start  w-full h-full  mx-auto   ">
 
       <!-- LEFT Image -->
       <div class="hidden lg:block">
@@ -138,11 +138,11 @@
               protection
             </li>
           </ul>
-
           <button
-            class="mx-auto w-76 h-14 px-2  block transition-transform duration-300 ease-in-out hover:scale-95   rounded-4xl font-semibold text-white text-lg  uppercase   opacity-90 bg-gradient-to-b from-pink-600 to-pink-900  ">
+            class="mx-auto w-64 lg:w-76 h-14 px-2  block transition-transform duration-300 ease-in-out hover:scale-95   rounded-4xl font-semibold text-white text-lg  uppercase   opacity-90 bg-gradient-to-b from-pink-600 to-pink-900  ">
             Try It Now
           </button>
+
 
         </div>
 
@@ -343,7 +343,7 @@
 
       <div class="grid grid-cols-1  lg:grid-cols-2 items-center  space-y-4  mx-auto">
         <!-- Image -->
-        <img src="../images/protecting-children-bg.svg" alt="bg" class="w-full mx-auto  object-cover ">
+        <img src="../images/protecting-children-bg.svg" alt="bg" class="lg:w-full w-96 mx-auto  object-cover ">
 
         <!-- Features -->
         <div class="flex flex-col gap-2 px-7 py-4">
@@ -501,69 +501,72 @@
     <div class="px-2">
       <h1 class="md:text-4xl font-bold text-2xl text-center">Your Simple <br> Guide to Mosquito-Free Fun</h1>
     </div>
-    <div
-      class="grid xl:grid-cols-5 px-4 text-neutral-600 lg:grid-cols-4 md:grid-cols-2 items-center mx-auto  gap-3.5 md:py-6 py-4">
+    <div class="grid xl:grid-cols-5  px-4 text-neutral-600 lg:grid-cols-4  items-center   gap-3.5 lg:py-6 py-4">
       <!-- Card 1 -->
       <div
-        class="w-80 h-32 md:size-full lg:w-60 lg:h-full py-2 lg:py-0 lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
-        <div class="    ">
-          <img class="  hidden lg:block" src="../images/rectangle1.svg" alt="mosquito free">
-          <img class=" rounded-4xl  object-cover lg:hidden " src="../images/rectangle1mobile.svg" alt="mosquito free">
+        class="sm:w-80 md:w-full 2xl:w-full  lg:w-60 lg:h-full py-3 px-4.5  lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
+        <div class="   ">
+          <img class="  w-full hidden lg:block" src="../images/rectangle1.svg" alt="mosquito free">
+          <img class="   object-cover lg:hidden " src="../images/rectangle1mobile.svg" alt="mosquito free">
         </div>
-        <div class=" w-44 lg:w-52 py-3.5 px-5 lg:px-2 lg:py-1">
-          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 1</span> Choose the right
+        <div class="  lg:w-52 w-fit p-3.5  lg:px-2 lg:py-1">
+          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 1</span> <br class="lg:hidden ">
+            Choose the right
             number of
             stickers for your child's age. Don't worry, it'll last for 30 days!</p>
         </div>
       </div>
       <!-- Card 2 -->
       <div
-        class="w-80 h-32 md:size-full lg:w-60 lg:h-full py-2 lg:py-0 lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
+        class="sm:w-80 md:w-full 2xl:w-full  lg:w-60 lg:h-full py-3 px-4.5  lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
         <div class="   ">
-          <img class="  hidden lg:block" src="../images/rectangle2.svg" alt="mosquito free">
-          <img class=" rounded-4xl  object-cover lg:hidden " src="../images/rectangle2mobile.svg" alt="mosquito free">
+          <img class="  w-full hidden lg:block" src="../images/rectangle2.svg" alt="mosquito free">
+          <img class="   object-cover lg:hidden " src="../images/rectangle2mobile.svg" alt="mosquito free">
         </div>
-        <div class=" w-44 lg:w-52 py-3.5 px-5 lg:px-2 lg:py-1">
-          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 2</span>
+        <div class="  lg:w-52 w-fit p-3.5  lg:px-2 lg:py-1">
+          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 2</span> <br class="lg:hidden ">
             Ready for 8 hours of fun? Just stick 'em and forget 'em!</p>
         </div>
       </div>
       <!-- Card 3 -->
       <div
-        class="w-80 h-32 md:size-full lg:w-60 lg:h-full py-2 lg:py-0 lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
+        class="sm:w-80 md:w-full 2xl:w-full  lg:w-60 lg:h-full py-3 px-4.5  lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
         <div class="   ">
-          <img class="  hidden lg:block" src="../images/rectangle3.svg" alt="mosquito free">
-          <img class=" rounded-4xl  object-cover 
+          <img class="  w-full hidden lg:block" src="../images/rectangle3.svg" alt="mosquito free">
+          <img class="   object-cover 
            lg:hidden " src="../images/rectangle3mobile.svg" alt="mosquito free">
         </div>
-        <div class=" w-44 lg:w-52 py-3.5 px-5 lg:px-2 lg:py-1 ">
-          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 3</span> Changing every 4-6
+        <div class="  lg:w-52 w-fit p-3.5  lg:px-2 lg:py-1">
+          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 3</span> <br class="lg:hidden ">
+            Changing every 4-6
             hours keeps those bugs at bay!</p>
         </div>
       </div>
       <!-- Card 4 -->
       <div
-        class="w-80 h-32 md:size-full lg:w-60 lg:h-full py-2 lg:py-0 lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
+        class="sm:w-80 md:w-full 2xl:w-full  lg:w-60 lg:h-full py-3 px-4.5  lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
         <div class="   ">
-          <img class="  hidden lg:block" src="../images/rectangle4.svg" alt="mosquito free">
-          <img class=" rounded-4xl  object-cover 
+          <img class="  w-full hidden lg:block" src="../images/rectangle4.svg" alt="mosquito free">
+          <img class="   object-cover 
            lg:hidden " src="../images/rectangle4mobile.svg" alt="mosquito free">
         </div>
-        <div class=" w-44 lg:w-52 py-3.5 px-5 lg:px-2 lg:py-1 ">
-          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 4</span> Choose the right
+        <div class="  lg:w-52 w-fit p-3.5  lg:px-2 lg:py-1">
+          <p class="lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 4</span> <br class="lg:hidden ">
+            Choose the right
             Application is a breeze! Clothes, prams, car seats. Stick and go... No mess, no fuss.</p>
         </div>
       </div>
       <!-- Card 5 -->
       <div
-        class="w-80 h-32 md:size-full lg:w-60 lg:h-full py-2 lg:py-0 lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
+        class="sm:w-80 md:w-full 2xl:w-full  lg:w-60 lg:h-full py-3 px-4.5  lg:p-0  flex gap-2  items-start lg:flex-col rounded-2xl border  border-stone-200 bg-white overflow-hidden ">
         <div class="   ">
-          <img class="  hidden lg:block" src="../images/rectangle5.svg" alt="mosquito free">
-          <img class=" rounded-4xl  object-cover 
+          <img class="w-full  hidden lg:block" src="../images/rectangle5.svg" alt="mosquito free">
+          <img class="   object-cover 
            lg:hidden " src="../images/rectangle5mobile.svg" alt="mosquito free">
         </div>
-        <div class=" w-44 lg:w-52 py-3.5 px-5 lg:p-x2 ">
-          <p class=" lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 5</span> Now watch your kids
+        <div class="  lg:w-52 w-fit p-3.5  lg:px-2 lg:py-1">
+          <p class=" lg:text-base text-sm text-[#525252]"><span class="font-bold">Step 5</span> <br class="lg:hidden ">
+            Now watch your kids
             play, explore, and laugh without a single mosquito in sight!</p>
         </div>
       </div>
@@ -631,8 +634,8 @@
   <!-- single product section -->
 
   <div class="2xl:container mx-auto m-0  ">
-    <div class="bg-white border-b lg:pt-16  border-gray-400 grid lg:grid-cols-2  md:grid-cols-1 mx-auto   gap-8">
-      <div class="flex flex-col-reverse lg:flex-row gap-2  flex-1 w-full ">
+    <div class="bg-white border-b lg:pt-16  border-gray-400 grid lg:grid-cols-2  md:grid-cols-1 mx-auto   gap-8   ">
+      <div class="flex flex-col-reverse lg:flex-row gap-2  flex-1 ">
         <!-- left content -->
 
         <div class="flex  lg:flex-row flex-col-reverse  gap-2 md:p-2      overflow-x-auto">
@@ -660,7 +663,7 @@
 
           <!-- Main Image -->
           <div class="imagebox">
-            <img src="../images/thumbnail.png" id="screen" class="bg-center object-cover aspect-square md:rounded-2xl  rounded-none  w-full    lg:w-[623px] lg:h-[623px]
+            <img src="../images/thumbnail.png" id="screen" class="bg-center object-cover aspect-square md:rounded-2xl  rounded-none       lg:w-[623px] lg:h-[623px]
     transition-all duration-300 scale-100 opacity-100">
           </div>
           <!-- End Main Image -->
@@ -670,15 +673,15 @@
 
 
       <!-- Right content  -->
-      <div class="flex flex-col pt-0 lg:pt-8 lg:gap-y-6 gap-y-2 lg:px-3  w-full ">
-        <div class=" flex flex-col gap-3 lg:w-[470px] w-full    ">
+      <div class="flex flex-col pt-0 lg:pt-8 lg:gap-y-6 gap-y-2 px-3 min-w-xs ">
+        <div class=" flex flex-col gap-3 lg:w-[470px]     ">
           <h1
-            class="lg:text-4xl md:text-3xl text-2xl md:px-2 lg:px-0 font-bold text-gray-900  lg:text-wrap sm:text-start text-center   md:order-1 order-2">
+            class="lg:text-4xl md:text-3xl text-2xl  lg:px-0 font-bold text-gray-900  lg:text-wrap sm:text-start text-center   md:order-1 order-2">
             BuggyPatch Insect Repellent Patches</h1>
 
 
           <!-- Features  -->
-          <div class="flex flex-col gap-y-4 w-full    px-2  sm:order-3 order-3">
+          <div class="flex flex-col gap-y-4     sm:order-3 order-3">
             <ul class="flex flex-col gap-1.5 md:text-xl text-base font-bold   ">
               <li class="flex mb-2 items-center gap-2.5 ">
                 <img src="../images/anti mosquito.svg" class="size-8 lg:size-11" alt="Icon">Keep your kids free from
@@ -700,7 +703,7 @@
 
 
           <!-- Rating Container -->
-          <div class="flex flex-row px-5 lg:px-0  items-center md:justify-start justify-center   order-1 lg:order-2">
+          <div class="flex flex-row px-2 lg:px-0  items-center md:justify-start justify-center   order-1 lg:order-2">
             <!-- User Avatars -->
             <div class="flex -space-x-3 px-2 ">
               <img class="inline-block h-8 w-8 rounded-full " src="../images/person1.svg" alt="user" />
@@ -721,7 +724,7 @@
 
         </div>
         <!-- Packs -->
-        <div class=" w-full  px-4 mx-auto">
+        <div class="w-full    mx-auto">
           <div class="flex  gap-3.5 lg:gap-4.5">
             <!-- 1 Pack -->
             <label
@@ -811,7 +814,7 @@
                 included</span></p>
 
             <button
-              class="mx-auto w-76 h-14 px-2  block transition-transform duration-300 ease-in-out hover:scale-95   rounded-4xl font-semibold text-white text-lg  uppercase   opacity-90 bg-gradient-to-b from-pink-600 to-pink-900  ">
+              class="mx-auto w-64 lg:w-76 h-14 px-2  block transition-transform duration-300 ease-in-out hover:scale-95   rounded-4xl font-semibold text-white text-lg  uppercase   opacity-90 bg-gradient-to-b from-pink-600 to-pink-900  ">
               Try It Now
             </button>
 
@@ -877,7 +880,7 @@
       <!-- Table Container -->
       <div class="bg-white rounded-lg mt-5  md:overflow-hidden  ">
         <div class="table-wrapper">
-          <table class="w-full min-table-width">
+          <table class="w-full min-table-width ">
             <!-- Header Row -->
             <thead>
               <tr>
@@ -914,8 +917,8 @@
 
               </tr>
               <tr>
-                <th class="w-22 py-10   font-bold text-black text-xs">Category</th>
-                <th class=" w-22 h-20 bg-emerald-100  text-center">
+                <th class=" py-10   font-bold text-black text-xs">Category</th>
+                <th class="  h-20 bg-emerald-100  text-center">
                   <div class="flex flex-col items-center">
                     <!-- <img src="../images/poroduct_icon.svg" alt="BuggyPatch Products"
                       class="h-10 md:h-16 lg:h-20 mb-1 md:mb-2"> -->
@@ -1103,20 +1106,28 @@
       <!-- Image Section -->
       <div class="lg:w-1/4  w-full px-8 ">
 
-        <h1 class="text-3xl lg:text-4xl font-bold mb-4 text-center block lg:hidden">Say Goodbye to Itchy Nights with Our
+        <h1 class="text-2xl lg:text-4xl font-bold mb-4 text-center block text-black lg:hidden">Say Goodbye to Itchy
+          Nights with
+          Our
           ScratchyPatch Bundle</h1>
         <img src="../images/ScratchyPatchBundle.png" alt="ScratchyPatch Bundle" class="    mx-auto">
       </div>
 
       <!-- Text and Button Section -->
-      <div class="lg:w-1/2 px-4 text-center lg:text-left">
+      <div class="lg:w-1/2 px-4 text-center lg:text-left text-neutral-700">
         <div class="flex flex-col items-center">
-          <h1 class="text-3xl font-bold mb-4 text-center lg:block hidden">Say Goodbye to Itchy Nights with Our
+          <h1 class="text-4xl font-bold mb-4 text-center lg:block hidden text-black">Say Goodbye to Itchy Nights with
+            Our
             ScratchyPatch Bundle</h1>
-          <p class="mb-4 text-center ">ScratchyPatch Bundle is here to end your child's itch-nightmare.</p>
-          <p class="mb-4 text-center">Instant relief? Check! Happiness without redness? You got it! Imagine a day
+          <p class="mb-4 text-center lg:text-2xl text-lg  ">ScratchyPatch Bundle is here to end your child's
+            itch-nightmare.</p>
+          <p class="mb-4 text-center lg:text-lg text-sm">Instant relief? Check! Happiness without redness? You got it!
+            Imagine a
+            day
             filled with play and zero annoyances from bites. Cool, right? But we're not done!</p>
-          <p class="mb-4 text-center">Think of a gentle forest breeze or grandma's touch, all bundled up and soothing
+          <p class="mb-4 text-center lg:text-lg text-sm">Think of a gentle forest breeze or grandma's touch, all bundled
+            up and
+            soothing
             away irritation. Ready for sweet relief? Grab your bundle, and never look back!</p>
 
           <button
